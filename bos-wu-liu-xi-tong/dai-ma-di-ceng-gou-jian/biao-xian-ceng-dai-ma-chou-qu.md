@@ -1,6 +1,6 @@
 # 表现层代码抽取
 
-![](../../.gitbook/assets/image%20%2893%29.png)
+![](../../.gitbook/assets/image%20%28108%29.png)
 
 {% code-tabs %}
 {% code-tabs-item title="BaseAction" %}

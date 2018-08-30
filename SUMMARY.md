@@ -30,6 +30,7 @@
     * [ztree的使用](bos-wu-liu-xi-tong/xiang-mu-qian-tai-ye-mian/ztree-de-shi-yong.md)
     * [easyUi messager和menuButton](bos-wu-liu-xi-tong/xiang-mu-qian-tai-ye-mian/easyui-messager-he-menubutton.md)
     * [datagrid使用方法](bos-wu-liu-xi-tong/xiang-mu-qian-tai-ye-mian/datagrid-shi-yong-fang-fa.md)
+    * [combotree的使用](bos-wu-liu-xi-tong/xiang-mu-qian-tai-ye-mian/combotree-de-shi-yong.md)
   * [代码底层构建](bos-wu-liu-xi-tong/dai-ma-di-ceng-gou-jian/README.md)
     * [持久层代码抽取](bos-wu-liu-xi-tong/dai-ma-di-ceng-gou-jian/chi-jiu-ceng-dai-ma-chou-qu.md)
     * [表现层代码抽取](bos-wu-liu-xi-tong/dai-ma-di-ceng-gou-jian/biao-xian-ceng-dai-ma-chou-qu.md)
@@ -67,6 +68,9 @@
       * [业务受理保存](bos-wu-liu-xi-tong/ye-wu-shi-xian/ye-wu-shou-li-fu-wu/ye-wu-shou-li-bao-cun.md)
       * [工作单快速录入](bos-wu-liu-xi-tong/ye-wu-shi-xian/ye-wu-shou-li-fu-wu/gong-zuo-dan-kuai-su-lu-ru/README.md)
         * [datagrid编辑功能使用](bos-wu-liu-xi-tong/ye-wu-shi-xian/ye-wu-shou-li-fu-wu/gong-zuo-dan-kuai-su-lu-ru/datagrid-bian-ji-gong-neng-shi-yong.md)
+    * [认证和授权操作](bos-wu-liu-xi-tong/ye-wu-shi-xian/ren-zheng-he-shou-quan-cao-zuo/README.md)
+      * [添加权限数据和显示](bos-wu-liu-xi-tong/ye-wu-shi-xian/ren-zheng-he-shou-quan-cao-zuo/tian-jia-quan-xian-shu-ju-he-xian-shi/README.md)
+        * [使用Combotree去显示下拉菜单](bos-wu-liu-xi-tong/ye-wu-shi-xian/ren-zheng-he-shou-quan-cao-zuo/tian-jia-quan-xian-shu-ju-he-xian-shi/shi-yong-combotree-qu-xian-shi-xia-la-cai-dan.md)
   * [WebService](bos-wu-liu-xi-tong/webservice/README.md)
     * [Webservice概述](bos-wu-liu-xi-tong/webservice/webservice-gai-shu.md)
     * [基于jdk1.7发布一个WebService服务](bos-wu-liu-xi-tong/webservice/ji-yu-jdk1.7-fa-bu-yi-ge-webservice-fu-wu.md)
@@ -77,4 +81,5 @@
     * [常见权限控制方法](bos-wu-liu-xi-tong/quan-xian-kong-zhi/chang-jian-quan-xian-kong-zhi-fang-fa.md)
     * [apache shiro](bos-wu-liu-xi-tong/quan-xian-kong-zhi/apache-shiro/README.md)
       * [在bos系统中配置shiro](bos-wu-liu-xi-tong/quan-xian-kong-zhi/apache-shiro/zai-bos-xi-tong-zhong-pei-zhi-shiro.md)
+      * [shiro提供的权限控制方法](bos-wu-liu-xi-tong/quan-xian-kong-zhi/apache-shiro/shiro-ti-gong-de-quan-xian-kong-zhi-fang-fa.md)
 
