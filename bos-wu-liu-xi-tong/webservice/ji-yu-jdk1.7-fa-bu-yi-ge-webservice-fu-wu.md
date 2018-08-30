@@ -27,7 +27,7 @@ public class HelloService {
 
 ```
 
-![](../../.gitbook/assets/image%20%2868%29.png)
+![](../../.gitbook/assets/image%20%2884%29.png)
 
 ```text
 3.2.2	客户端调用

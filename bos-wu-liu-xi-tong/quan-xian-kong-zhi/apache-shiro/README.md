@@ -6,7 +6,7 @@
 
 ## shiro框架认证流程
 
-![](../../../.gitbook/assets/image%20%2895%29.png)
+![](../../../.gitbook/assets/image%20%28112%29.png)
 
 Application Code：应用程序代码，由开发人员负责开发的 
 
@@ -16,5 +16,5 @@ SecurityManager：框架提供的接口，代表安全管理器对象
 
 Realm：可以开发人员编写，框架也提供一些，类似于ＤＡＯ，用于访问权限数据
 
-![](../../../.gitbook/assets/image%20%2849%29.png)
+![](../../../.gitbook/assets/image%20%2863%29.png)
 
