@@ -50,17 +50,17 @@ function doAssociations(){
 
 ## 第二步：在定区Action中注入crm代理对象，并且提供方法远程调用crm服务
 
-![](../../../../../.gitbook/assets/image%20%2828%29.png)
+![](../../../../../.gitbook/assets/image%20%2829%29.png)
 
 ## 第三步：为关联客户窗口中左右移动两个按钮绑定事件
 
-![](../../../../../.gitbook/assets/image%20%28110%29.png)
+![](../../../../../.gitbook/assets/image%20%28113%29.png)
 
 ## 第四步：为定区关联客户窗口中的“关联客户”按钮绑定事件
 
-![](../../../../../.gitbook/assets/image%20%28125%29.png)
+![](../../../../../.gitbook/assets/image%20%28128%29.png)
 
-![](../../../../../.gitbook/assets/image%20%2840%29.png)
+![](../../../../../.gitbook/assets/image%20%2842%29.png)
 
 
 
