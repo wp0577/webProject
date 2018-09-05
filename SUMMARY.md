@@ -25,6 +25,7 @@
     * [classpath对应目录问题](bos-wu-liu-xi-tong/xiang-mu-zhong-yu-dao-de-wen-ti/classpath-dui-ying-mu-lu-wen-ti.md)
     * [cxf客户端spring service bean注入问题](bos-wu-liu-xi-tong/xiang-mu-zhong-yu-dao-de-wen-ti/cxf-ke-hu-duan-spring-service-bean-zhu-ru-wen-ti.md)
     * [Junit测试问题](bos-wu-liu-xi-tong/xiang-mu-zhong-yu-dao-de-wen-ti/junit-ce-shi-wen-ti.md)
+    * [在Java中对mysql数据库插入datetime类型数据](bos-wu-liu-xi-tong/xiang-mu-zhong-yu-dao-de-wen-ti/zai-java-zhong-dui-mysql-shu-ju-ku-cha-ru-datetime-lei-xing-shu-ju.md)
   * [项目前台页面](bos-wu-liu-xi-tong/xiang-mu-qian-tai-ye-mian/README.md)
     * [主页设计](bos-wu-liu-xi-tong/xiang-mu-qian-tai-ye-mian/zhu-ye-she-ji.md)
     * [动态添加选项卡](bos-wu-liu-xi-tong/xiang-mu-qian-tai-ye-mian/dong-tai-tian-jia-xuan-xiang-ka.md)
