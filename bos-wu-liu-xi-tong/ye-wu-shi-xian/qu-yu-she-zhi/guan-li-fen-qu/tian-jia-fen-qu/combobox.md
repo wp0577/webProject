@@ -4,13 +4,13 @@ description: 通过comboBox插件实现下拉菜单的数据显示，并提供�
 
 # comboBox
 
-![](../../../../../.gitbook/assets/image%20%28146%29.png)
+![](../../../../../.gitbook/assets/image%20%28150%29.png)
 
-![](../../../../../.gitbook/assets/image%20%2856%29.png)
+![](../../../../../.gitbook/assets/image%20%2857%29.png)
 
 ## 第一步：修改页面中combobox：
 
-![](../../../../../.gitbook/assets/image%20%2886%29.png)
+![](../../../../../.gitbook/assets/image%20%2890%29.png)
 
 如果想要在选择框输入内容并通过内容检索的话可以将mode模式设置成remote如上图：
 
@@ -22,9 +22,9 @@ description: 通过comboBox插件实现下拉菜单的数据显示，并提供�
 
 ## 服务器端
 
-![](../../../../../.gitbook/assets/image%20%28110%29.png)
+![](../../../../../.gitbook/assets/image%20%28114%29.png)
 
 ### 在RegionDao中扩展方法
 
-![](../../../../../.gitbook/assets/image%20%28109%29.png)
+![](../../../../../.gitbook/assets/image%20%28113%29.png)
 

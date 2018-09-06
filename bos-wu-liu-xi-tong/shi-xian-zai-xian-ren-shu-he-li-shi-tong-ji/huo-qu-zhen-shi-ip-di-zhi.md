@@ -14,7 +14,7 @@ request.getRemoteAddr\(\)
 > request.getAttribute\("X-real-ip"\)  
 > 这样就明白了吧。
 
-
+通过调用NetworkUtil方法去得到真实ip地址
 
 ```text
 package util;

@@ -98,4 +98,7 @@
   * [HighCharts使用](bos-wu-liu-xi-tong/highcharts-shi-yong.md)
   * [实现在线人数和历史统计](bos-wu-liu-xi-tong/shi-xian-zai-xian-ren-shu-he-li-shi-tong-ji/README.md)
     * [获取真实IP地址](bos-wu-liu-xi-tong/shi-xian-zai-xian-ren-shu-he-li-shi-tong-ji/huo-qu-zhen-shi-ip-di-zhi.md)
+    * [项目所遇问题](bos-wu-liu-xi-tong/shi-xian-zai-xian-ren-shu-he-li-shi-tong-ji/xiang-mu-suo-yu-wen-ti.md)
+    * [实现方法](bos-wu-liu-xi-tong/shi-xian-zai-xian-ren-shu-he-li-shi-tong-ji/shi-xian-fang-fa.md)
+    * [ServletContext与ApplicationContext的区别](bos-wu-liu-xi-tong/shi-xian-zai-xian-ren-shu-he-li-shi-tong-ji/servletcontext-yu-applicationcontext-de-qu-bie.md)
 
