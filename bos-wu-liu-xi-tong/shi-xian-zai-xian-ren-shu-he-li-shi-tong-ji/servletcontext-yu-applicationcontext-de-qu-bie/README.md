@@ -1,7 +1,5 @@
 # ServletContext与ApplicationContext的区别
 
-
-
 ## Spring中的概念 {#Spring中的概念}
 
 在阅读Spring源码或相关的文献时，经常会遇到WebApplicationContext, ApplicationContext, ServletContext以及ServletConfig等名词，这些名词都很相近，但适用范围又有所不同，对理解源码及spring内部实现造成混淆，因此有必要对这些概念进行一些比较.
@@ -21,17 +19,32 @@
 
 根据servlet规范的规定，可以通过以下配置来进行配置，其中Context-Param指定了配置文件的位置，ContextLoaderListener定义了context加载时的监听器，因此，在容器启动时，监听器会自动加载配置文件，执行servletContext的初始化操作.
 
-| 12345678 | &lt;context-param&gt;    &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;    &lt;param-value&gt;classpath:conf/applicationContext.xml&lt;/param-value&gt;&lt;/context-param&gt;&lt;listener&gt;    &lt;listener-class&gt;org.springframework.web.context.ContextLoaderListener&lt;/listener-class&gt;&lt;/listener&gt; |
-| :--- | :--- |
-
+```text
+<context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:conf/applicationContext.xml</param-value>
+</context-param>
+<listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+```
 
 #### ServletConfig {#ServletConfig}
 
 ServletConfig是针对每个Servlet进行配置的，因此它的配置是在servlet的配置中，如下所示， 配置使用的是init-param, 它的作用就是在servlet初始化的时候，加载配置信息，完成servlet的初始化操作
 
-| 123456789101112 | &lt;servlet&gt;    &lt;servlet-name&gt;mvc-dispatcher&lt;/servlet-name&gt;    &lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt;    &lt;init-param&gt;        &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;        &lt;param-value&gt;/WEB-INF/mvc-dispatcher-servlet.xml&lt;/param-value&gt;    &lt;/init-param&gt;    &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;    &lt;async-supported&gt;true&lt;/async-supported&gt;&lt;/servlet&gt; |
-| :--- | :--- |
-
+```text
+<servlet>
+    <servlet-name>mvc-dispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/mvc-dispatcher-servlet.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+    <async-supported>true</async-supported>
+</servlet>
+```
 
 关于applicationContext的配置，简单来讲，在servletContext中配置的context-param参数, 会生成所谓的root application context, 而每个servlet中指定的init-param参数中指定的对象会生成servlet application context, 而且它的parent就是servletContext中生成的root application context, 因此在servletContext中定义的所有配置都会被继承到servlet中， 这点在后续的源码阐述中会有更直观的体现.
 
@@ -42,16 +55,97 @@ ServletConfig是针对每个Servlet进行配置的，因此它的配置是在ser
 * 第一步是判断是否存在rootApplicationContext，如果存在直接抛出异常结束
 * 第二步是创建context对象，并在servletContext中把这个context设置为名称为ROOT\_WEB\_APPLICATION\_CONTEXT\_ATTRIBUTE的属性. **到这里其实已经解释了ApplicationContext与servletContext的区别，它不过是servletContext中的一个属性值罢了，这个属性值中存有程序运行的所有上下文信息** 由于这个applicationContext是全局的应用上下文信息，在spring中就把它取名为’root application context’.
 
-| 12345678910111213141516 | public WebApplicationContext initWebApplicationContext\(ServletContext servletContext\) {	if \(servletContext.getAttribute\(WebApplicationContext.ROOT\_WEB\_APPLICATION\_CONTEXT\_ATTRIBUTE\) != null\) {	}	try {		// Store context in local instance variable, to guarantee that		// it is available on ServletContext shutdown.		if \(this.context == null\) {			this.context = createWebApplicationContext\(servletContext\);		}		servletContext.setAttribute\(WebApplicationContext.ROOT\_WEB\_APPLICATION\_CONTEXT\_ATTRIBUTE, this.context\);		return this.context;	}} |
-| :--- | :--- |
+```text
 
+public WebApplicationContext initWebApplicationContext(ServletContext servletContext) {
+	if (servletContext.getAttribute(WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE) != null) {
+	}
+	try {
+		// Store context in local instance variable, to guarantee that
+		// it is available on ServletContext shutdown.
+		if (this.context == null) {
+			this.context = createWebApplicationContext(servletContext);
+		}
+		servletContext.setAttribute(WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, this.context);
+		return this.context;
+	}
+}
+```
 
 接着再来看DispatcherServlet的源码，作为servlet，根据规范它的配置信息应该是在Init方法中完成，因此我们找到这个方法的源码即可知道servletConfig以及servlet application context的初始化过程:
 
 * 第一步是从servletConfig中获取所有的配置参数， ServletConfigPropertyValues的构造函数中会遍历servletConfig对象的所有初始化参数，并把它们一一存储在pvs中
 * 第二步就是开始初始servlet，由于dispatcherServlet是继承自FrameworkServlet，因此这个方法在FrameworkServlet中找到，可以看到，在initServletBean中又调用了initWebApplicationContext方法， 在这个方法中，首先获取到rootContext， 接着就开始初始化wac这个对象，在创建这个wac对象的方法中，传入了rootContext作为它的parent，也就是在这里，两者之间的父子关系建立，也就形成了我们平时常说的继承关系.
 
-| 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677 | @Overridepublic final void init\(\) throws ServletException {	// Set bean properties from init parameters.	PropertyValues pvs = new ServletConfigPropertyValues\(getServletConfig\(\), this.requiredProperties\);	// Let subclasses do whatever initialization they like.	initServletBean\(\);}//遍历获取servletConfig的所有参数public ServletConfigPropertyValues\(ServletConfig config, Set&lt;String&gt; requiredProperties\)	throws ServletException {	while \(en.hasMoreElements\(\)\) {		String property = \(String\) en.nextElement\(\);		Object value = config.getInitParameter\(property\);		addPropertyValue\(new PropertyValue\(property, value\)\);		if \(missingProps != null\) {			missingProps.remove\(property\);		}	}}//初始化webApplicationContextprotected final void initServletBean\(\) throws ServletException {	try {		this.webApplicationContext = initWebApplicationContext\(\);	}}//具体的初始化操作实现protected WebApplicationContext initWebApplicationContext\(\) {	WebApplicationContext rootContext = WebApplicationContextUtils.getWebApplicationContext\(getServletContext\(\)\);	WebApplicationContext wac = null;	if \(this.webApplicationContext != null\) {		// A context instance was injected at construction time -&gt; use it		wac = this.webApplicationContext;		if \(wac instanceof ConfigurableWebApplicationContext\) {			ConfigurableWebApplicationContext cwac = \(ConfigurableWebApplicationContext\) wac;			if \(!cwac.isActive\(\)\) {				// The context has not yet been refreshed -&gt; provide services such as				// setting the parent context, setting the application context id, etc				if \(cwac.getParent\(\) == null\) {					// The context instance was injected without an explicit parent -&gt; set					// the root application context \(if any; may be null\) as the parent					cwac.setParent\(rootContext\);				}				configureAndRefreshWebApplicationContext\(cwac\);			}		}	}	if \(wac == null\) {		// No context instance was injected at construction time -&gt; see if one		// has been registered in the servlet context. If one exists, it is assumed		// that the parent context \(if any\) has already been set and that the		// user has performed any initialization such as setting the context id		wac = findWebApplicationContext\(\);	}	if \(wac == null\) {		// No context instance is defined for this servlet -&gt; create a local one		//就是在这个方法中，servlet application context与root application context的继承关系正式建立		wac = createWebApplicationContext\(rootContext\);	}	if \(this.publishContext\) {		// Publish the context as a servlet context attribute.		String attrName = getServletContextAttributeName\(\);		getServletContext\(\).setAttribute\(attrName, wac\);	}	return wac;}//就是在这个方法中，servlet application context与root application context的继承关系正式建立protected WebApplicationContext createWebApplicationContext\(WebApplicationContext parent\) {	return createWebApplicationContext\(\(ApplicationContext\) parent\);} |
-| :--- | :--- |
-
+```text
+@Override
+public final void init() throws ServletException {
+	// Set bean properties from init parameters.
+	PropertyValues pvs = new ServletConfigPropertyValues(getServletConfig(), this.requiredProperties);
+	// Let subclasses do whatever initialization they like.
+	initServletBean();
+}
+//遍历获取servletConfig的所有参数
+public ServletConfigPropertyValues(ServletConfig config, Set<String> requiredProperties)
+	throws ServletException {
+	while (en.hasMoreElements()) {
+		String property = (String) en.nextElement();
+		Object value = config.getInitParameter(property);
+		addPropertyValue(new PropertyValue(property, value));
+		if (missingProps != null) {
+			missingProps.remove(property);
+		}
+	}
+}
+//初始化webApplicationContext
+protected final void initServletBean() throws ServletException {
+	try {
+		this.webApplicationContext = initWebApplicationContext();
+	}
+}
+//具体的初始化操作实现
+protected WebApplicationContext initWebApplicationContext() {
+	WebApplicationContext rootContext = WebApplicationContextUtils.getWebApplicationContext(getServletContext());
+	WebApplicationContext wac = null;
+	if (this.webApplicationContext != null) {
+		// A context instance was injected at construction time -> use it
+		wac = this.webApplicationContext;
+		if (wac instanceof ConfigurableWebApplicationContext) {
+			ConfigurableWebApplicationContext cwac = (ConfigurableWebApplicationContext) wac;
+			if (!cwac.isActive()) {
+				// The context has not yet been refreshed -> provide services such as
+				// setting the parent context, setting the application context id, etc
+				if (cwac.getParent() == null) {
+					// The context instance was injected without an explicit parent -> set
+					// the root application context (if any; may be null) as the parent
+					cwac.setParent(rootContext);
+				}
+				configureAndRefreshWebApplicationContext(cwac);
+			}
+		}
+	}
+	if (wac == null) {
+		// No context instance was injected at construction time -> see if one
+		// has been registered in the servlet context. If one exists, it is assumed
+		// that the parent context (if any) has already been set and that the
+		// user has performed any initialization such as setting the context id
+		wac = findWebApplicationContext();
+	}
+	if (wac == null) {
+		// No context instance is defined for this servlet -> create a local one
+		//就是在这个方法中，servlet application context与root application context的继承关系正式建立
+		wac = createWebApplicationContext(rootContext);
+	}
+	if (this.publishContext) {
+		// Publish the context as a servlet context attribute.
+		String attrName = getServletContextAttributeName();
+		getServletContext().setAttribute(attrName, wac);
+	}
+	return wac;
+}
+//就是在这个方法中，servlet application context与root application context的继承关系正式建立
+protected WebApplicationContext createWebApplicationContext(WebApplicationContext parent) {
+	return createWebApplicationContext((ApplicationContext) parent);
+}
+```
 

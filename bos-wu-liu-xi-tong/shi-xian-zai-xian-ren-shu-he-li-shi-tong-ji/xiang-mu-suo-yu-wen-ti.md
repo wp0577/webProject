@@ -73,3 +73,35 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 
 -6 强行使用 IPV6 地址 .
 
+## [JQ和Js获取span标签的内容](https://www.cnblogs.com/anniey/p/6439021.html)
+
+#### html:
+
+```text
+1 <span id="content">‘我是span标签的内容’</span>
+```
+
+#### javascript获取:
+
+```text
+1 var cont=document.getElementById("content");
+2 console.log('innerText cont= '+ cont.innerText); 
+3 console.log('innerHtml cont= '+ cont.innerHTML); 
+4 //以上两条都能输出span标签的值‘我是span标签的内容’；
+```
+
+#### jquery获取:
+
+```text
+1 var cont=$("#content");
+2 console.log(cont.val()); //输出  (无值);
+3 console.log(cont.text()); //输出 ‘我是span标签的内容’;
+4 console.log(cont.html()); //输出 ‘我是span标签的内容’;
+```
+
+#### 小知识：
+
+**\*\*\***在JS中使用innerHTML时希望自己注意，不要写成了cont.innerHtml ，这样输出结果就是 undefined ；  
+**\*\***在表单中习惯性的选用val\(\)来获取值，但是在span标签继续想用val\(\)方法的时候打印空值；  
+**\***无奈想了一下，span这个容器需要用text\(\)来获取的呀，我泪奔了，逃走~~·
+
