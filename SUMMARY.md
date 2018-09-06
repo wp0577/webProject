@@ -96,4 +96,6 @@
     * [入门案例](bos-wu-liu-xi-tong/quartz-ding-shi/ru-men-an-li.md)
     * [在BOS项目中引入quartz并结合mail程序](bos-wu-liu-xi-tong/quartz-ding-shi/zai-bos-xiang-mu-zhong-yin-ru-quartz-bing-jie-he-mail-cheng-xu.md)
   * [HighCharts使用](bos-wu-liu-xi-tong/highcharts-shi-yong.md)
+  * [实现在线人数和历史统计](bos-wu-liu-xi-tong/shi-xian-zai-xian-ren-shu-he-li-shi-tong-ji/README.md)
+    * [获取真实IP地址](bos-wu-liu-xi-tong/shi-xian-zai-xian-ren-shu-he-li-shi-tong-ji/huo-qu-zhen-shi-ip-di-zhi.md)
 
