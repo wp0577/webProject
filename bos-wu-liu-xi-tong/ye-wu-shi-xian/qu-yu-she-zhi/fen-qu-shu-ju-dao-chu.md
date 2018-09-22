@@ -2,7 +2,7 @@
 
 ## 为页面中导出按钮绑定事件
 
-![](../../../.gitbook/assets/image%20%2868%29.png)
+![](../../../.gitbook/assets/image%20%2871%29.png)
 
 ## 服务端实现
 

@@ -1,0 +1,1817 @@
+# 环境配置
+
+### Idea配置主要参考下面页面：
+
+{% hint style="info" %}
+[https://blog.csdn.net/williamHappy/article/details/54376855](https://blog.csdn.net/williamHappy/article/details/54376855)
+{% endhint %}
+
+### 1.1. 使用maven的好处
+
+使用maven管理工程。
+
+Jar包的管理
+
+工程之间的依赖管理
+
+自动打包  
+
+
+### 1.2. 后台工程搭建分析
+
+Maven的常见打包方式：jar、war、pom
+
+Pom工程一般都是父工程，管理jar包的版本、maven插件的版本、统一的依赖管理。聚合工程。
+
+e3-parent：父工程，打包方式pom，管理jar包的版本号。
+
+    \|           项目中所有工程都应该继承父工程。
+
+\|--e3-common：通用的工具类通用的pojo。打包方式jar
+
+\|--e3-manager：服务层工程。聚合工程。Pom工程
+
+\|--e3-manager-dao：打包方式jar
+
+\|--e3-manager-pojo：打包方式jar
+
+\|--e3-manager-interface：打包方式jar
+
+\|--e3-manager-service：打包方式：jar
+
+    \|--e3-manager-web：表现层工程。打包方式war
+
+### 1.3. 工程搭建
+
+#### 1.3.1.                  e3-parent
+
+Pom工程。
+
+开发环境：eclipse mars2
+
+Maven：3.3.9
+
+本地仓库：默认位置在~/.m2/repository
+
+Eclipse不需要配置，只需要把本地仓库放到当前用户目录下的.m2下。
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image002.png)
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.png)
+
+**Pom文件**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          </p>
+            <p>xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"></p>
+            <p>
+              <modelVersion>4.0.0</modelVersion>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-parent</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              <packaging>pom</packaging>
+            </p>
+            <p>
+              <!-- 集中定义依赖版本号 -->
+            </p>
+            <p>
+              <properties>
+            </p>
+            <p>
+              <junit.version>4.12</junit.version>
+            </p>
+            <p>
+              <spring.version>4.2.4.RELEASE</spring.version>
+            </p>
+            <p>
+              <mybatis.version>3.2.8</mybatis.version>
+            </p>
+            <p>
+              <mybatis.spring.version>1.2.2</mybatis.spring.version>
+            </p>
+            <p>
+              <mybatis.paginator.version>1.2.15</mybatis.paginator.version>
+            </p>
+            <p>
+              <mysql.version>5.1.32</mysql.version>
+            </p>
+            <p>
+              <slf4j.version>1.6.4</slf4j.version>
+            </p>
+            <p>
+              <jackson.version>2.4.2</jackson.version>
+            </p>
+            <p>
+              <druid.version>1.0.9</druid.version>
+            </p>
+            <p>
+              <httpclient.version>4.3.5</httpclient.version>
+            </p>
+            <p>
+              <jstl.version>1.2</jstl.version>
+            </p>
+            <p>
+              <servlet-api.version>2.5</servlet-api.version>
+            </p>
+            <p>
+              <jsp-api.version>2.0</jsp-api.version>
+            </p>
+            <p>
+              <joda-time.version>2.5</joda-time.version>
+            </p>
+            <p>
+              <commons-lang3.version>3.3.2</commons-lang3.version>
+            </p>
+            <p>
+              <commons-io.version>1.3.2</commons-io.version>
+            </p>
+            <p>
+              <commons-net.version>3.3</commons-net.version>
+            </p>
+            <p>
+              <pagehelper.version>3.4.2-fix</pagehelper.version>
+            </p>
+            <p>
+              <jsqlparser.version>0.9.1</jsqlparser.version>
+            </p>
+            <p>
+              <commons-fileupload.version>1.3.1</commons-fileupload.version>
+            </p>
+            <p>
+              <jedis.version>2.7.2</jedis.version>
+            </p>
+            <p>
+              <solrj.version>4.10.3</solrj.version>
+            </p>
+            <p>
+              <dubbo.version>2.5.3</dubbo.version>
+            </p>
+            <p>
+              <zookeeper.version>3.4.7</zookeeper.version>
+            </p>
+            <p>
+              <zkclient.version>0.1</zkclient.version>
+            </p>
+            <p>
+              <activemq.version>5.11.2</activemq.version>
+            </p>
+            <p>
+              <freemarker.version>2.3.23</freemarker.version>
+            </p>
+            <p>
+              <quartz.version>2.2.2</quartz.version>
+            </p>
+            <p>
+              </properties>
+            </p>
+            <p>
+              <dependencyManagement>
+            </p>
+            <p>
+              <dependencies>
+            </p>
+            <p>
+              <!-- 时间操作组件 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>joda-time</groupId>
+            </p>
+            <p>
+              <artifactId>joda-time</artifactId>
+            </p>
+            <p>
+              <version>${joda-time.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- Apache工具组件 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.apache.commons</groupId>
+            </p>
+            <p>
+              <artifactId>commons-lang3</artifactId>
+            </p>
+            <p>
+              <version>${commons-lang3.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.apache.commons</groupId>
+            </p>
+            <p>
+              <artifactId>commons-io</artifactId>
+            </p>
+            <p>
+              <version>${commons-io.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>commons-net</groupId>
+            </p>
+            <p>
+              <artifactId>commons-net</artifactId>
+            </p>
+            <p>
+              <version>${commons-net.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- Jackson Json处理工具包 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.fasterxml.jackson.core</groupId>
+            </p>
+            <p>
+              <artifactId>jackson-databind</artifactId>
+            </p>
+            <p>
+              <version>${jackson.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- httpclient -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.apache.httpcomponents</groupId>
+            </p>
+            <p>
+              <artifactId>httpclient</artifactId>
+            </p>
+            <p>
+              <version>${httpclient.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- quartz任务调度框架 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.quartz-scheduler</groupId>
+            </p>
+            <p>
+              <artifactId>quartz</artifactId>
+            </p>
+            <p>
+              <version>${quartz.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- 单元测试 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>junit</groupId>
+            </p>
+            <p>
+              <artifactId>junit</artifactId>
+            </p>
+            <p>
+              <version>${junit.version}</version>
+            </p>
+            <p>
+              <scope>test</scope>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- 日志处理 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.slf4j</groupId>
+            </p>
+            <p>
+              <artifactId>slf4j-log4j12</artifactId>
+            </p>
+            <p>
+              <version>${slf4j.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- Mybatis -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.mybatis</groupId>
+            </p>
+            <p>
+              <artifactId>mybatis</artifactId>
+            </p>
+            <p>
+              <version>${mybatis.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.mybatis</groupId>
+            </p>
+            <p>
+              <artifactId>mybatis-spring</artifactId>
+            </p>
+            <p>
+              <version>${mybatis.spring.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.github.miemiedev</groupId>
+            </p>
+            <p>
+              <artifactId>mybatis-paginator</artifactId>
+            </p>
+            <p>
+              <version>${mybatis.paginator.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.github.pagehelper</groupId>
+            </p>
+            <p>
+              <artifactId>pagehelper</artifactId>
+            </p>
+            <p>
+              <version>${pagehelper.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- MySql -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>mysql</groupId>
+            </p>
+            <p>
+              <artifactId>mysql-connector-java</artifactId>
+            </p>
+            <p>
+              <version>${mysql.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- 连接池 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.alibaba</groupId>
+            </p>
+            <p>
+              <artifactId>druid</artifactId>
+            </p>
+            <p>
+              <version>${druid.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- Spring -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-context</artifactId>
+            </p>
+            <p>
+              <version>${spring.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-beans</artifactId>
+            </p>
+            <p>
+              <version>${spring.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-webmvc</artifactId>
+            </p>
+            <p>
+              <version>${spring.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-jdbc</artifactId>
+            </p>
+            <p>
+              <version>${spring.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-aspects</artifactId>
+            </p>
+            <p>
+              <version>${spring.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-jms</artifactId>
+            </p>
+            <p>
+              <version>${spring.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-context-support</artifactId>
+            </p>
+            <p>
+              <version>${spring.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- JSP相关 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>jstl</groupId>
+            </p>
+            <p>
+              <artifactId>jstl</artifactId>
+            </p>
+            <p>
+              <version>${jstl.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>javax.servlet</groupId>
+            </p>
+            <p>
+              <artifactId>servlet-api</artifactId>
+            </p>
+            <p>
+              <version>${servlet-api.version}</version>
+            </p>
+            <p>
+              <scope>provided</scope>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>javax.servlet</groupId>
+            </p>
+            <p>
+              <artifactId>jsp-api</artifactId>
+            </p>
+            <p>
+              <version>${jsp-api.version}</version>
+            </p>
+            <p>
+              <scope>provided</scope>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- 文件上传组件 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>commons-fileupload</groupId>
+            </p>
+            <p>
+              <artifactId>commons-fileupload</artifactId>
+            </p>
+            <p>
+              <version>${commons-fileupload.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- Redis客户端 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>redis.clients</groupId>
+            </p>
+            <p>
+              <artifactId>jedis</artifactId>
+            </p>
+            <p>
+              <version>${jedis.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- solr客户端 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.apache.solr</groupId>
+            </p>
+            <p>
+              <artifactId>solr-solrj</artifactId>
+            </p>
+            <p>
+              <version>${solrj.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- dubbo相关 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.alibaba</groupId>
+            </p>
+            <p>
+              <artifactId>dubbo</artifactId>
+            </p>
+            <p>
+              <version>${dubbo.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.apache.zookeeper</groupId>
+            </p>
+            <p>
+              <artifactId>zookeeper</artifactId>
+            </p>
+            <p>
+              <version>${zookeeper.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.github.sgroschupf</groupId>
+            </p>
+            <p>
+              <artifactId>zkclient</artifactId>
+            </p>
+            <p>
+              <version>${zkclient.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.apache.activemq</groupId>
+            </p>
+            <p>
+              <artifactId>activemq-all</artifactId>
+            </p>
+            <p>
+              <version>${activemq.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.freemarker</groupId>
+            </p>
+            <p>
+              <artifactId>freemarker</artifactId>
+            </p>
+            <p>
+              <version>${freemarker.version}</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              </dependencies>
+            </p>
+            <p>
+              </dependencyManagement>
+            </p>
+            <p>
+              <build>
+            </p>
+            <p>
+              <finalName>${project.artifactId}</finalName>
+            </p>
+            <p>
+              <plugins>
+            </p>
+            <p>
+              <!-- 资源文件拷贝插件 -->
+            </p>
+            <p>
+              <plugin>
+            </p>
+            <p>
+              <groupId>org.apache.maven.plugins</groupId>
+            </p>
+            <p>
+              <artifactId>maven-resources-plugin</artifactId>
+            </p>
+            <p>
+              <version>2.7</version>
+            </p>
+            <p>
+              <configuration>
+            </p>
+            <p>
+              <encoding>UTF-8</encoding>
+            </p>
+            <p>
+              </configuration>
+            </p>
+            <p>
+              </plugin>
+            </p>
+            <p>
+              <!-- java编译插件 -->
+            </p>
+            <p>
+              <plugin>
+            </p>
+            <p>
+              <groupId>org.apache.maven.plugins</groupId>
+            </p>
+            <p>
+              <artifactId>maven-compiler-plugin</artifactId>
+            </p>
+            <p>
+              <version>3.2</version>
+            </p>
+            <p>
+              <configuration>
+            </p>
+            <p>
+              <source>1.7</source>
+            </p>
+            <p>
+              <target>1.7</target>
+            </p>
+            <p>
+              <encoding>UTF-8</encoding>
+            </p>
+            <p>
+              </configuration>
+            </p>
+            <p>
+              </plugin>
+            </p>
+            <p>
+              </plugins>
+            </p>
+            <p>
+              <pluginManagement>
+            </p>
+            <p>
+              <plugins>
+            </p>
+            <p>
+              <!-- 配置Tomcat插件 -->
+            </p>
+            <p>
+              <plugin>
+            </p>
+            <p>
+              <groupId>org.apache.tomcat.maven</groupId>
+            </p>
+            <p>
+              <artifactId>tomcat7-maven-plugin</artifactId>
+            </p>
+            <p>
+              <version>2.2</version>
+            </p>
+            <p>
+              </plugin>
+            </p>
+            <p>
+              </plugins>
+            </p>
+            <p>
+              </pluginManagement>
+            </p>
+            <p>
+              </build>
+            </p>
+            <p>
+          </project>
+          </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>#### 1.3.2.                  e3-common
+
+通用的工具类、通用的pojo。打包方式jar。需要继承父工程。
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png)
+
+**Pom文件**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          </p>
+            <p>xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"></p>
+            <p>
+              <modelVersion>4.0.0</modelVersion>
+            </p>
+            <p>
+              <parent>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-parent</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </parent>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-common</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              <dependencies>
+            </p>
+            <p>
+              <!-- 时间操作组件 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>joda-time</groupId>
+            </p>
+            <p>
+              <artifactId>joda-time</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- Apache工具组件 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.apache.commons</groupId>
+            </p>
+            <p>
+              <artifactId>commons-lang3</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.apache.commons</groupId>
+            </p>
+            <p>
+              <artifactId>commons-io</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>commons-net</groupId>
+            </p>
+            <p>
+              <artifactId>commons-net</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- Jackson Json处理工具包 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.fasterxml.jackson.core</groupId>
+            </p>
+            <p>
+              <artifactId>jackson-databind</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- httpclient -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.apache.httpcomponents</groupId>
+            </p>
+            <p>
+              <artifactId>httpclient</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- quartz任务调度框架 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.quartz-scheduler</groupId>
+            </p>
+            <p>
+              <artifactId>quartz</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- 单元测试 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>junit</groupId>
+            </p>
+            <p>
+              <artifactId>junit</artifactId>
+            </p>
+            <p>
+              <scope>test</scope>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- 日志处理 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.slf4j</groupId>
+            </p>
+            <p>
+              <artifactId>slf4j-log4j12</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              </dependencies>
+            </p>
+            <p>
+          </project>
+          </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>#### 1.3.3.                  e3-manager
+
+聚合工程。打包方式pom。
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.png)
+
+**Pom文件**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          </p>
+            <p>xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"></p>
+            <p>
+              <modelVersion>4.0.0</modelVersion>
+            </p>
+            <p>
+              <parent>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-parent</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </parent>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              <packaging>pom</packaging>
+            </p>
+            <p>
+              <dependencies>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-common</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              </dependencies>
+            </p>
+            <p>
+          </project>
+          </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>#### 1.3.4.                  e3-manager-pojo
+
+是一个maven模块，打包方式jar。
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.png)
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image007.png)
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image008.png)
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image009.png)
+
+**Pom文件**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          </p>
+            <p>xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"></p>
+            <p>
+              <modelVersion>4.0.0</modelVersion>
+            </p>
+            <p>
+              <parent>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </parent>
+            </p>
+            <p>
+              <artifactId>e3-manager-pojo</artifactId>
+            </p>
+            <p>
+          </project>
+          </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>#### 1.3.5.                  e3-manager-dao
+
+Maven模块，打包方式jar。
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image010.png)
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image011.png)
+
+**Pom文件**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          </p>
+            <p>xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"></p>
+            <p>
+              <modelVersion>4.0.0</modelVersion>
+            </p>
+            <p>
+              <parent>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </parent>
+            </p>
+            <p>
+              <artifactId>e3-manager-dao</artifactId>
+            </p>
+            <p>
+              <dependencies>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager-pojo</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- 添加对mybatis的依赖 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.mybatis</groupId>
+            </p>
+            <p>
+              <artifactId>mybatis</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.mybatis</groupId>
+            </p>
+            <p>
+              <artifactId>mybatis-spring</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.github.miemiedev</groupId>
+            </p>
+            <p>
+              <artifactId>mybatis-paginator</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.github.pagehelper</groupId>
+            </p>
+            <p>
+              <artifactId>pagehelper</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- MySql -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>mysql</groupId>
+            </p>
+            <p>
+              <artifactId>mysql-connector-java</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- 连接池 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>com.alibaba</groupId>
+            </p>
+            <p>
+              <artifactId>druid</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              </dependencies>
+            </p>
+            <p>
+          </project>
+          </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>#### 1.3.6.                  e3-manager-interface
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image012.png)
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image013.png)
+
+**Pom文件**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          </p>
+            <p>xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"></p>
+            <p>
+              <modelVersion>4.0.0</modelVersion>
+            </p>
+            <p>
+              <parent>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </parent>
+            </p>
+            <p>
+              <artifactId>e3-manager-interface</artifactId>
+            </p>
+            <p>
+              <dependencies>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager-pojo</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              </dependencies>
+            </p>
+            <p>
+          </project>
+          </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>#### 1.3.7.                  e3-manager-service
+
+打包方式jar包。
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image014.png)
+
+**Pom文件**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          </p>
+            <p>xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"></p>
+            <p>
+              <modelVersion>4.0.0</modelVersion>
+            </p>
+            <p>
+              <parent>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </parent>
+            </p>
+            <p>
+              <artifactId>e3-manager-service</artifactId>
+            </p>
+            <p>
+              <dependencies>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager-dao</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager-interface</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- spring的依赖 -->
+            </p>
+            <p>
+              <!-- Spring -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-context</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-beans</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-webmvc</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-jdbc</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-aspects</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-jms</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>org.springframework</groupId>
+            </p>
+            <p>
+              <artifactId>spring-context-support</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              </dependencies>
+            </p>
+            <p>
+          </project>
+          </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>#### 1.3.8.                  e3-manager-web
+
+表现层，打包方式war。
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image015.png)
+
+**Pom文件**
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          </p>
+            <p>xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"></p>
+            <p>
+              <modelVersion>4.0.0</modelVersion>
+            </p>
+            <p>
+              <parent>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </parent>
+            </p>
+            <p>
+              <artifactId>e3-manager-web</artifactId>
+            </p>
+            <p>
+              <packaging>war</packaging>
+            </p>
+            <p>
+              <dependencies>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>cn.e3mall</groupId>
+            </p>
+            <p>
+              <artifactId>e3-manager-service</artifactId>
+            </p>
+            <p>
+              <version>0.0.1-SNAPSHOT</version>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <!-- JSP相关 -->
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>jstl</groupId>
+            </p>
+            <p>
+              <artifactId>jstl</artifactId>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>javax.servlet</groupId>
+            </p>
+            <p>
+              <artifactId>servlet-api</artifactId>
+            </p>
+            <p>
+              <scope>provided</scope>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              <dependency>
+            </p>
+            <p>
+              <groupId>javax.servlet</groupId>
+            </p>
+            <p>
+              <artifactId>jsp-api</artifactId>
+            </p>
+            <p>
+              <scope>provided</scope>
+            </p>
+            <p>
+              </dependency>
+            </p>
+            <p>
+              </dependencies>
+            </p>
+            <p>
+          </project>
+          </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>**补全目录结构**
+
+由于打包方式为war需要补全目录结构，需要在webapp目录下添加WEB-INF目录，和web.xml文件。
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image016.png)
+
+Web.xml
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <?xml version="1.0" encoding="UTF-8" ?>
+        </p>
+        <p>
+          <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" </p>
+            <p>xmlns="http://java.sun.com/xml/ns/javaee"</p>
+            <p>xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"</p>
+            <p>id="WebApp_ID" version="2.5"></p>
+            <p>
+              <display-name>e3-manager-web</display-name>
+            </p>
+            <p>
+              <welcome-file-list>
+            </p>
+            <p>
+              <welcome-file>index.jsp</welcome-file>
+            </p>
+            <p>
+              </welcome-file-list>
+            </p>
+            <p>
+          </web-app>
+          </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>**添加欢迎页**
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image017.png)
+
+Index.jsp:
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <%@ page language="java" contentType="text/html; charset=UTF-8" </p>
+            <p>pageEncoding="UTF-8"%></p>
+            <p>
+              <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+            </p>
+            <p>
+              <html>
+            </p>
+            <p>
+              
+              <head>
+            </p>
+            <p>
+              <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            </p>
+            <p>
+              <title>Insert title here</title>
+            </p>
+            <p>
+              </head>
+            </p>
+            <p>
+              
+              <body>
+            </p>
+            <p>
+               <h1>hello 宜立方商城</h1>
+            </p>
+            <p>
+              </body>
+            </p>
+            <p>
+              
+              </html>
+            </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>### 1.4. 启动工程
+
+启动e3-manager工程。
+
+需要在e3-manager 的pom工程中，配置tomcat插件。启动的端口号，和工程名称。
+
+在e3-manager的pom文件中添加如下配置：
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p>
+          <!-- 配置tomcat插件 -->
+        </p>
+        <p>
+          <build>
+        </p>
+        <p>
+          <plugins>
+        </p>
+        <p>
+          <plugin>
+        </p>
+        <p>
+          <groupId>org.apache.tomcat.maven</groupId>
+        </p>
+        <p>
+          <artifactId>tomcat7-maven-plugin</artifactId>
+        </p>
+        <p>
+          <configuration>
+        </p>
+        <p>
+          <port>8080</port>
+        </p>
+        <p>
+          <path>/</path>
+        </p>
+        <p>
+          </configuration>
+        </p>
+        <p>
+          </plugin>
+        </p>
+        <p>
+          </plugins>
+        </p>
+        <p>
+          </build>
+        </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>启动tomcat插件：
+
+clean tomcat7:run
+
+先把e3-parent、e3-common安装到本地仓库。然后再启动。
+
+![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image018.png)
+
