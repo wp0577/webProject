@@ -26,11 +26,11 @@ BOS：Bussiness Operating System 业务操作系统
 
 5、上线和运维
 
-![](../.gitbook/assets/image%20%28128%29.png)
+![](../.gitbook/assets/image%20%28130%29.png)
 
 ## 1.3 开发环境
 
-![](../.gitbook/assets/image%20%28154%29.png)
+![](../.gitbook/assets/image%20%28156%29.png)
 
 ## 1.4技术选型
 
