@@ -11,6 +11,7 @@
     * [dubbo](onlinemall/untitled/dubbo.md)
     * [Zookeeper](onlinemall/untitled/zookeeper.md)
     * [工程改造](onlinemall/untitled/gong-cheng-gai-zao.md)
+    * [Dubbo-admin](onlinemall/untitled/dubbo-admin.md)
 * [注册代码的基本实现](zhu-ce-dai-ma-de-ji-ben-shi-xian/README.md)
   * [ID，name, class属性区别](zhu-ce-dai-ma-de-ji-ben-shi-xian/idname-class-shu-xing-qu-bie.md)
   * [BeanUtil的使用](zhu-ce-dai-ma-de-ji-ben-shi-xian/beanutil-de-shi-yong.md)

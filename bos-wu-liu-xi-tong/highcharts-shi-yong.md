@@ -17,7 +17,7 @@ Highcharts 是一个用纯JavaScript编写的一个图表库， 能够很简单�
 
 #### 第二步：在jsp页面中提供按钮，并提供div窗口，在这个窗口中展示图表
 
-![](../.gitbook/assets/image%20%28145%29.png)
+![](../.gitbook/assets/image%20%28146%29.png)
 
 ![](../.gitbook/assets/image%20%289%29.png)
 
@@ -45,7 +45,7 @@ function doShowHighcharts(){
 
 #### 第四步：在服务端Action中提供方法
 
-![](../.gitbook/assets/image%20%28118%29.png)
+![](../.gitbook/assets/image%20%28119%29.png)
 
 Dao代码：
 

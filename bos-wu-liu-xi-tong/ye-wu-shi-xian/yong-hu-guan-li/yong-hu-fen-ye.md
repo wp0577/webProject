@@ -2,7 +2,7 @@
 
 在User类中提供getRoleNames方法，getBirthdayString方法
 
-![](../../../.gitbook/assets/image%20%2876%29.png)
+![](../../../.gitbook/assets/image%20%2877%29.png)
 
 ![](../../../.gitbook/assets/image%20%2828%29.png)
 

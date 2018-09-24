@@ -2,21 +2,21 @@
 
 ## 第一步：引入shiro框架相关的jar
 
-![](../../../.gitbook/assets/image%20%28150%29.png)
+![](../../../.gitbook/assets/image%20%28151%29.png)
 
 ## 第二步：在web.xml中配置spring框架提供的用于整合shiro框架的过滤器
 
-![](../../../.gitbook/assets/image%20%28158%29.png)
+![](../../../.gitbook/assets/image%20%28159%29.png)
 
 启动tomcat服务器，抛出异常：spring工厂中不存在一个名称为“shiroFilter”的bean对象
 
 ## 第三步：在spring配置文件中配置bean，id为shiroFilter
 
-![](../../../.gitbook/assets/image%20%28125%29.png)
+![](../../../.gitbook/assets/image%20%28126%29.png)
 
 框架提供的过滤器：
 
-![](../../../.gitbook/assets/image%20%2867%29.png)
+![](../../../.gitbook/assets/image%20%2868%29.png)
 
 ## 第四步：配置安全管理器
 

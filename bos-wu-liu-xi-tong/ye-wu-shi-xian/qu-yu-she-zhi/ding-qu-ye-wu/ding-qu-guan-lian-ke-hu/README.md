@@ -42,5 +42,5 @@ WebService详解
 
 ### 第四步：通过注解方式将代理对象注入给Action
 
-![](../../../../../.gitbook/assets/image%20%28129%29.png)
+![](../../../../../.gitbook/assets/image%20%28130%29.png)
 

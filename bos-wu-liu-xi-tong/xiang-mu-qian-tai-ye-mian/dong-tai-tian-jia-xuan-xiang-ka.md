@@ -4,7 +4,7 @@
 
 ###  选中指定的选项卡和判断某个选项卡是否存在
 
-![](../../.gitbook/assets/image%20%28104%29.png)
+![](../../.gitbook/assets/image%20%28105%29.png)
 
 ```text
 <a id="but1" class="easyui-linkbutton">添加一个选项卡</a>
