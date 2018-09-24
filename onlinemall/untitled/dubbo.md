@@ -34,7 +34,7 @@ Dubbo就是**资源调度和治理中心的管理工具。**
 
 #### 1.1.2.                  Dubbo的架构
 
-![](../../.gitbook/assets/image%20%2863%29.png)
+![](../../.gitbook/assets/image%20%2864%29.png)
 
 **节点角色说明：**
 

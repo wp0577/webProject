@@ -20,7 +20,7 @@
 
 maven是依赖管理和项目构建的工具，下图是分层结构
 
-![](../../../.gitbook/assets/image%20%28144%29.png)
+![](../../../.gitbook/assets/image%20%28146%29.png)
 
 ## IDEA创建父子模块方法：
 

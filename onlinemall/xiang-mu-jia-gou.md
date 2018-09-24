@@ -2,7 +2,7 @@
 
 ### 1.1. 功能列表
 
-![](../.gitbook/assets/image%20%2859%29.png)
+![](../.gitbook/assets/image%20%2860%29.png)
 
 后台管理系统：管理商品、订单、类目、商品规格属性、用户管理以及内容发布等功能。
 
@@ -21,13 +21,13 @@
 
 #### 1.2.1.                  传统架构
 
-![](../.gitbook/assets/image%20%28147%29.png)
+![](../.gitbook/assets/image%20%28149%29.png)
 
 #### 1.2.2.                  1000并发
 
 ![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.png)![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png)  
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../.gitbook/assets/image%20%2857%29.png)
 
 需要20台服务器做tomcat集群。当tomcat集群中节点数量增加，服务能力先增加后下降。
 
@@ -38,7 +38,7 @@
 
 需要按照功能点把系统拆分，拆分成独立的功能。单独为某一个节点添加服务器。需要系统之间配合才能完成整个业务逻辑。叫做分布式。
 
-![](../.gitbook/assets/image%20%28107%29.png)
+![](../.gitbook/assets/image%20%28109%29.png)
 
 分布式架构：多个子系统相互协作才能完成业务流程。系统之间需要进行通信。
 
@@ -68,11 +68,11 @@
 
 SOA：Service Oriented Architecture面向服务的架构。也就是把工程拆分成服务层、表现层两个工程。服务层中包含业务逻辑，只需要对外提供服务即可。表现层只需要处理和页面的交互，业务逻辑都是调用服务层的服务来实现。
 
-![](../.gitbook/assets/image%20%28140%29.png)
+![](../.gitbook/assets/image%20%28142%29.png)
 
 #### 1.2.5.                  宜立方商城系统架构
 
 ![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image009.png)
 
-![](../.gitbook/assets/image%20%2858%29.png)
+![](../.gitbook/assets/image%20%2859%29.png)
 

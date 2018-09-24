@@ -54,13 +54,13 @@ function doAssociations(){
 
 ## 第三步：为关联客户窗口中左右移动两个按钮绑定事件
 
-![](../../../../../.gitbook/assets/image%20%28125%29.png)
+![](../../../../../.gitbook/assets/image%20%28127%29.png)
 
 ## 第四步：为定区关联客户窗口中的“关联客户”按钮绑定事件
 
-![](../../../../../.gitbook/assets/image%20%28141%29.png)
+![](../../../../../.gitbook/assets/image%20%28143%29.png)
 
-![](../../../../../.gitbook/assets/image%20%2844%29.png)
+![](../../../../../.gitbook/assets/image%20%2845%29.png)
 
 
 

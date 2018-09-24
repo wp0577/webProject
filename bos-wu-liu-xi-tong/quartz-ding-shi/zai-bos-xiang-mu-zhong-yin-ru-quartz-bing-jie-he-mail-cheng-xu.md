@@ -2,7 +2,7 @@
 
 ## 第一步：在pom.xml中引入quartz和JavaMail的依赖
 
-![](../../.gitbook/assets/image%20%28143%29.png)
+![](../../.gitbook/assets/image%20%28145%29.png)
 
 ## 第二步：提供一个作业类，用于为系统管理员发送邮件
 
