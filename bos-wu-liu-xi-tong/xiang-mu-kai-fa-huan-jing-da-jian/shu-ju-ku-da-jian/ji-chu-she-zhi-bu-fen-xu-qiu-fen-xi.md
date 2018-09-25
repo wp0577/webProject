@@ -44,7 +44,7 @@
 
 ![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.jpg)
 
-![](../../../.gitbook/assets/image%20%2814%29.png)
+![](../../../.gitbook/assets/image%20%2815%29.png)
 
 ### 1.8   时间管理
 
@@ -54,5 +54,5 @@
 
 ![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image008.jpg)
 
-![](../../../.gitbook/assets/image%20%2896%29.png)
+![](../../../.gitbook/assets/image%20%28107%29.png)
 

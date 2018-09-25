@@ -2,27 +2,27 @@
 
 ## 1.页面部分
 
-![](../../../.gitbook/assets/image%20%28165%29.png)
+![](../../../.gitbook/assets/image%20%28179%29.png)
 
 第一步：修改页面，使用ztree勾选效果（checkbox）
 
-![](../../../.gitbook/assets/image%20%28144%29.png)
+![](../../../.gitbook/assets/image%20%28156%29.png)
 
 第二步：修改ajax方法的请求URL地址
 
-![](../../../.gitbook/assets/image%20%28168%29.png)
+![](../../../.gitbook/assets/image%20%28182%29.png)
 
 第三步：为保存按钮绑定事件，提交表单
 
 因为ztree中的check是假check，所以我们需要自己去获取数据
 
-![](../../../.gitbook/assets/image%20%2867%29.png)
+![](../../../.gitbook/assets/image%20%2874%29.png)
 
-![](../../../.gitbook/assets/image%20%2848%29.png)
+![](../../../.gitbook/assets/image%20%2852%29.png)
 
 ## 2.服务端实现
 
 service代码
 
-![](../../../.gitbook/assets/image%20%2813%29.png)
+![](../../../.gitbook/assets/image%20%2814%29.png)
 
