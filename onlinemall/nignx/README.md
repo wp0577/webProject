@@ -94,7 +94,7 @@ n  openssl
 
 第五步：make install
 
-![](../../.gitbook/assets/image%20%2884%29.png)
+![](../../.gitbook/assets/image%20%2892%29.png)
 
 ### 1.3. 启动nginx
 
@@ -103,7 +103,7 @@ n  openssl
 \[root@localhost sbin\]\# ./nginx  
  
 
-![](../../.gitbook/assets/image%20%2895%29.png)
+![](../../.gitbook/assets/image%20%28103%29.png)
 
 关闭nginx：
 

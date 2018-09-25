@@ -14,7 +14,7 @@
 
 ```
 
-![](../../.gitbook/assets/image%20%288%29.png)
+![](../../.gitbook/assets/image%20%289%29.png)
 
 ## 2 accordion折叠面板
 
@@ -30,7 +30,7 @@
 		</div>
 ```
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/image%20%285%29.png)
 
 ## 3.tabs选项卡面板
 
@@ -44,5 +44,5 @@
 		</div>
 ```
 
-![](../../.gitbook/assets/image%20%2877%29.png)
+![](../../.gitbook/assets/image%20%2884%29.png)
 

@@ -21,7 +21,7 @@ OCUpload（One Click Upload）
 </script>
 ```
 
-![](../../../.gitbook/assets/image%20%2897%29.png)
+![](../../../.gitbook/assets/image%20%28105%29.png)
 
 ## 在服务端接收上传的文件
 

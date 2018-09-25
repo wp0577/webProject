@@ -2,21 +2,21 @@
 
 ## alert使用
 
-![](../../.gitbook/assets/image%20%28153%29.png)
+![](../../.gitbook/assets/image%20%28170%29.png)
 
 ## confirm
 
-![](../../.gitbook/assets/image%20%28171%29.png)
+![](../../.gitbook/assets/image%20%28191%29.png)
 
-![](../../.gitbook/assets/image%20%28100%29.png)
+![](../../.gitbook/assets/image%20%28109%29.png)
 
 ## show
 
-![](../../.gitbook/assets/image%20%28150%29.png)
+![](../../.gitbook/assets/image%20%28165%29.png)
 
-![](../../.gitbook/assets/image%20%28152%29.png)
+![](../../.gitbook/assets/image%20%28169%29.png)
 
-![](../../.gitbook/assets/image%20%28151%29.png)
+![](../../.gitbook/assets/image%20%28167%29.png)
 
 ## menuBotton菜单使用
 
@@ -34,5 +34,5 @@
 
 ```
 
-![](../../.gitbook/assets/image%20%28119%29.png)
+![](../../.gitbook/assets/image%20%28129%29.png)
 
