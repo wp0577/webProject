@@ -39,13 +39,13 @@
   <tbody></tbody>
 </table>#### 1.1.1.                  发布服务
 
-![](../../../.gitbook/assets/image%20%2838%29.png)
+![](../../../.gitbook/assets/image%20%2841%29.png)
 
 ### 1.2. 表现层
 
 引用服务：
 
-![](../../../.gitbook/assets/image%20%28192%29.png)
+![](../../../.gitbook/assets/image%20%28204%29.png)
 
 1、初始化表格请求的url：/item/list
 
@@ -76,7 +76,7 @@
 
 服务调用超时时间默认1秒，
 
-![](../../../.gitbook/assets/image%20%28125%29.png)
+![](../../../.gitbook/assets/image%20%28135%29.png)
 
 Debug设置源代码：
 
