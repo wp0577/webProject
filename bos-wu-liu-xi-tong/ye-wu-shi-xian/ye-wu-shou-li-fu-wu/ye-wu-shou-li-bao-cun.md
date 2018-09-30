@@ -39,17 +39,17 @@
 
 ## 第二步：创建NoticebillAction，注入crm代理对象，提供方法根据手机号查询客户信息，返回json
 
-![](../../../.gitbook/assets/image%20%28149%29.png)
+![](../../../.gitbook/assets/image%20%28155%29.png)
 
 注意：配置struts.xml 
 
 ## 第三步：为页面中“新单”按钮绑定事件
 
-![](../../../.gitbook/assets/image%20%2843%29.png)
+![](../../../.gitbook/assets/image%20%2845%29.png)
 
 ## 在NoticebillAction中提供方法实现业务受理自动分单
 
-![](../../../.gitbook/assets/image%20%28195%29.png)
+![](../../../.gitbook/assets/image%20%28204%29.png)
 
 ```text
 @Service

@@ -4,17 +4,17 @@
 
 第一步：把图片服务器解压缩。
 
-![](../../.gitbook/assets/image%20%2836%29.png)
+![](../../.gitbook/assets/image%20%2837%29.png)
 
 第二步：把图片服务器添加到Vmware中。
 
 第三步：Vmware的网络配置。
 
-![](../../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/image%20%2868%29.png)
 
 第四步：开机
 
-![](../../.gitbook/assets/image%20%28177%29.png)
+![](../../.gitbook/assets/image%20%28185%29.png)
 
 移动：网络配置不发生变化。要使用图片服务器，需要保证网络配置不变。
 
