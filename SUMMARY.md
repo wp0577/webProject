@@ -2,7 +2,8 @@
 
 * [JavaWebProject](README.md)
 * [OnlineMall](onlinemall/README.md)
-  * [bug](onlinemall/bug.md)
+  * [bug](onlinemall/bug/README.md)
+    * [jdk在linux下安装](onlinemall/bug/jdk-zai-linux-xia-an-zhuang.md)
   * [项目架构](onlinemall/xiang-mu-jia-gou.md)
   * [环境配置](onlinemall/huan-jing-pei-zhi/README.md)
     * [服务器启动后无响应无异常](onlinemall/huan-jing-pei-zhi/fu-wu-qi-qi-dong-hou-wu-xiang-ying-wu-yi-chang.md)
