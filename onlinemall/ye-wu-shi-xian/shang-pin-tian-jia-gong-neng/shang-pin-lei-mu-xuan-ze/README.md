@@ -4,17 +4,17 @@
 
 ### 1.1. 原型
 
-![](../../../../.gitbook/assets/image%20%2832%29.png)
+![](../../../../.gitbook/assets/image%20%2833%29.png)
 
 ### 1.2. 功能分析
 
-![](../../../../.gitbook/assets/image%20%28174%29.png)
+![](../../../../.gitbook/assets/image%20%28182%29.png)
 
-![](../../../../.gitbook/assets/image%20%2869%29.png)
+![](../../../../.gitbook/assets/image%20%2872%29.png)
 
 展示商品分类列表，使用EasyUI的tree控件展示。
 
-![](../../../../.gitbook/assets/image%20%2872%29.png)
+![](../../../../.gitbook/assets/image%20%2875%29.png)
 
 初始化tree请求的url：/item/cat/list
 

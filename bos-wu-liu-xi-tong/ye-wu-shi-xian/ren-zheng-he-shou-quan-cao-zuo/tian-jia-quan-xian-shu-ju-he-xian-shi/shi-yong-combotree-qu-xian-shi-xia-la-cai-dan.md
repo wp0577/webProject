@@ -2,19 +2,19 @@
 
 ## 显示效果
 
-![](../../../../.gitbook/assets/image%20%28136%29.png)
+![](../../../../.gitbook/assets/image%20%28142%29.png)
 
 ## 前端配置
 
-![](../../../../.gitbook/assets/image%20%2848%29.png)
+![](../../../../.gitbook/assets/image%20%2850%29.png)
 
 ## 后端配置
 
-![](../../../../.gitbook/assets/image%20%2863%29.png)
+![](../../../../.gitbook/assets/image%20%2865%29.png)
 
 ### 修改function.java内容
 
-![](../../../../.gitbook/assets/image%20%28140%29.png)
+![](../../../../.gitbook/assets/image%20%28146%29.png)
 
 因为combotree需要Id，和text两个参数，而如果不增加getText的话，只会得到id
 

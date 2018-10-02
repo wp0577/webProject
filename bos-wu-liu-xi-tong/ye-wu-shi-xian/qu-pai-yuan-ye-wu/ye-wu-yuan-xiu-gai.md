@@ -4,13 +4,13 @@
 
 ### 第一步：为数据表格绑定双击事件
 
-![](../../../.gitbook/assets/image%20%28160%29.png)
+![](../../../.gitbook/assets/image%20%28167%29.png)
 
-![](../../../.gitbook/assets/image%20%2831%29.png)
+![](../../../.gitbook/assets/image%20%2832%29.png)
 
 ### 第二步：复制页面中添加取派员窗口，获得修改取派员窗口
 
-![](../../../.gitbook/assets/image%20%28106%29.png)
+![](../../../.gitbook/assets/image%20%28109%29.png)
 
 ### 第三步：定义function
 
