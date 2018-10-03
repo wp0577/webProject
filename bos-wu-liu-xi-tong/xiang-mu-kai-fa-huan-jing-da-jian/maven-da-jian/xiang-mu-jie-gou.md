@@ -2,7 +2,7 @@
 
 ## 以bos-web为例
 
-![](../../../.gitbook/assets/image%20%28226%29.png)
+![](../../../.gitbook/assets/image%20%28240%29.png)
 
 ## 在各module中添加其他module（依赖传递）
 

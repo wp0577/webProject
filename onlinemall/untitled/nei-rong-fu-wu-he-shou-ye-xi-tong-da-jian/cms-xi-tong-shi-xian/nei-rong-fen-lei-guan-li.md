@@ -1,12 +1,12 @@
 # 内容分类管理
 
-![](../../../../.gitbook/assets/image%20%28163%29.png)
+![](../../../../.gitbook/assets/image%20%28172%29.png)
 
 #### 1.1.1.                  展示内容分类
 
 **功能分析**
 
-![](../../../../.gitbook/assets/image%20%28200%29.png)
+![](../../../../.gitbook/assets/image%20%28212%29.png)
 
 请求的url：/content/category/list
 
@@ -96,11 +96,11 @@ E3-manager-web
 
 依赖e3-content-interface模块
 
-![](../../../../.gitbook/assets/image%20%2869%29.png)
+![](../../../../.gitbook/assets/image%20%2873%29.png)
 
 Springmvc.xml中添加服务的引用：
 
-![](../../../../.gitbook/assets/image%20%28139%29.png)
+![](../../../../.gitbook/assets/image%20%28147%29.png)
 
 Controller
 
@@ -131,7 +131,7 @@ Controller
 
 **功能分析**
 
-![](../../../../.gitbook/assets/image%20%28121%29.png)
+![](../../../../.gitbook/assets/image%20%28127%29.png)
 
 请求的url：/content/category/create
 
@@ -169,7 +169,7 @@ c\)       向tb\_content\_category表中插入数据
 
 需要添加主键返回:
 
-![](../../../../.gitbook/assets/image%20%2864%29.png)
+![](../../../../.gitbook/assets/image%20%2868%29.png)
 
 注意：修改完代码后，需要向本地仓库安装e3-manager-dao包
 
@@ -252,7 +252,7 @@ json数据，E3Result
 
 **重命名**
 
-![](../../../../.gitbook/assets/image%20%2839%29.png)
+![](../../../../.gitbook/assets/image%20%2842%29.png)
 
 请求的url：/content/category/update
 
@@ -266,7 +266,7 @@ json数据，E3Result
 
 **删除节点**
 
-![](../../../../.gitbook/assets/image%20%28102%29.png)
+![](../../../../.gitbook/assets/image%20%28108%29.png)
 
 请求的url：/content/category/delete/
 

@@ -24,7 +24,7 @@ WebService详解
 
 ### 第二步：使用wsimport命令解析wsdl文件生成本地代码，只需要接口文件和实体类
 
-![](../../../../../.gitbook/assets/image%20%2886%29.png)
+![](../../../../../.gitbook/assets/image%20%2890%29.png)
 
 {% hint style="info" %}
 并在ICustomerService中加上@Service注解
@@ -42,5 +42,5 @@ WebService详解
 
 ### 第四步：通过注解方式将代理对象注入给Action
 
-![](../../../../../.gitbook/assets/image%20%28184%29.png)
+![](../../../../../.gitbook/assets/image%20%28193%29.png)
 

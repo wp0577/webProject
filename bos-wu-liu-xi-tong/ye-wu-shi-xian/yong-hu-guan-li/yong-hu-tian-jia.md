@@ -29,7 +29,7 @@
 
 第二步：在RoleAction中提供listajax方法，查询所有角色，返回json数据
 
-![](../../../.gitbook/assets/image%20%2822%29.png)
+![](../../../.gitbook/assets/image%20%2823%29.png)
 
 第三步：为保存按钮绑定事件，提交表单
 
@@ -37,7 +37,7 @@
 
 ## 服务端实现
 
-![](../../../.gitbook/assets/image%20%2813%29.png)
+![](../../../.gitbook/assets/image%20%2814%29.png)
 
-![](../../../.gitbook/assets/image%20%2897%29.png)
+![](../../../.gitbook/assets/image%20%28102%29.png)
 
