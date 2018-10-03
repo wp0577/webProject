@@ -26,5 +26,5 @@
 
 /root/apache-tomcat-7.0.47/webapps/dubbo-admin/WEB-INF/dubbo.properties
 
-![](../../.gitbook/assets/image%20%2895%29.png)
+![](../../.gitbook/assets/image%20%28100%29.png)
 

@@ -4,11 +4,11 @@
 
 正向代理
 
-![](../../.gitbook/assets/image%20%28131%29.png)
+![](../../.gitbook/assets/image%20%28136%29.png)
 
 反向代理：
 
-![](../../.gitbook/assets/image%20%2857%29.png)
+![](../../.gitbook/assets/image%20%2859%29.png)
 
 反向代理服务器决定哪台服务器提供服务。
 

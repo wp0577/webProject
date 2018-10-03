@@ -34,7 +34,7 @@ PREFIX参数指定redis的安装目录。一般软件安装到/usr目录下
 
 修改配置文件：
 
-![](../../.gitbook/assets/image%20%2851%29.png)
+![](../../.gitbook/assets/image%20%2853%29.png)
 
 \[root@localhost bin\]\# ./redis-server redis.conf
 

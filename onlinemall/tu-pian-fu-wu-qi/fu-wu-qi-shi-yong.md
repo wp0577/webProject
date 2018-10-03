@@ -2,11 +2,11 @@
 
 ### 1.1. Java客户端：
 
-![](../../.gitbook/assets/image%20%28199%29.png)
+![](../../.gitbook/assets/image%20%28205%29.png)
 
 Maven环境：
 
-![](../../.gitbook/assets/image%20%28106%29.png)
+![](../../.gitbook/assets/image%20%28111%29.png)
 
 ### 1.2. 上传图片
 

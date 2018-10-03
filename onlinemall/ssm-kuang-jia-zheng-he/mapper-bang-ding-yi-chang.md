@@ -2,7 +2,7 @@
 
 **原因**
 
-![](../../.gitbook/assets/image%20%28166%29.png)
+![](../../.gitbook/assets/image%20%28171%29.png)
 
 此异常的原因是由于mapper接口编译后在同一个目录下没有找到mapper映射文件而出现的。由于maven工程在默认情况下src/main/java目录下的mapper文件是不发布到target目录下的。
 

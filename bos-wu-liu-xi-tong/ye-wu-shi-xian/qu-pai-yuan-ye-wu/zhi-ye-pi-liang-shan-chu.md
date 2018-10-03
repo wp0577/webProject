@@ -4,7 +4,7 @@
 
 数据表格datagrid提供的方法，用于获取所有选中的行：
 
-![](../../../.gitbook/assets/image%20%2884%29.png)
+![](../../../.gitbook/assets/image%20%2888%29.png)
 
 ### 修改删除按钮绑定的事件：
 
