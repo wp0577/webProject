@@ -10,11 +10,11 @@ aof形式：append only file。把所有对redis数据库操作的命令，增�
 
 Rdb：
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2813%29.png)
 
 Aof的配置：
 
-![](../../.gitbook/assets/image%20%28193%29.png)
+![](../../.gitbook/assets/image%20%28198%29.png)
 
 两种持久化方案同时开启使用aof文件来恢复数据库。
 

@@ -30,15 +30,15 @@
 
 **初始状态**
 
-![](../../.gitbook/assets/image%20%28141%29.png)
+![](../../.gitbook/assets/image%20%28146%29.png)
 
 **主机宕机**
 
-![](../../.gitbook/assets/image%20%2840%29.png)
+![](../../.gitbook/assets/image%20%2841%29.png)
 
 **主机恢复**
 
-![](../../.gitbook/assets/image%20%2898%29.png)
+![](../../.gitbook/assets/image%20%28102%29.png)
 
 #### 1.2.4.                  高可用环境
 

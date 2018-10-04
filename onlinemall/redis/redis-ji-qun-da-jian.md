@@ -2,11 +2,11 @@
 
 ### 1.1. redis-cluster架构图
 
-![](../../.gitbook/assets/image%20%28164%29.png)
+![](../../.gitbook/assets/image%20%28169%29.png)
 
 redis-cluster投票:容错
 
-![](../../.gitbook/assets/image%20%28147%29.png)
+![](../../.gitbook/assets/image%20%28152%29.png)
 
 架构细节:
 
@@ -20,7 +20,7 @@ redis-cluster投票:容错
 
 Redis 集群中内置了 16384 个哈希槽，当需要在 Redis 集群中放置一个 key-value 时，redis 先对 key 使用 crc16 算法算出一个结果，然后把结果对 16384 求余数，这样每个 key 都会对应一个编号在 0-16383 之间的哈希槽，redis 会根据节点数量大致均等的将哈希槽映射到不同的节点
 
-![](../../.gitbook/assets/image%20%28223%29.png)
+![](../../.gitbook/assets/image%20%28232%29.png)
 
 ### 1.2. Redis集群的搭建
 
@@ -70,7 +70,7 @@ Installing RDoc documentation for redis-3.0.0...
 
 第一步：创建6个redis实例，每个实例运行在不同的端口。需要修改redis.conf配置文件。配置文件中还需要把cluster-enabled yes前的注释去掉。
 
-![](../../.gitbook/assets/image%20%28166%29.png)
+![](../../.gitbook/assets/image%20%28171%29.png)
 
 第二步：启动每个redis实例。
 

@@ -4,11 +4,11 @@
 
 正向代理
 
-![](../../.gitbook/assets/image%20%28136%29.png)
+![](../../.gitbook/assets/image%20%28141%29.png)
 
 反向代理：
 
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](../../.gitbook/assets/image%20%2860%29.png)
 
 反向代理服务器决定哪台服务器提供服务。
 
@@ -22,7 +22,7 @@
 
 nginx服务器使用虚拟机192.168.101.3
 
-![](../../.gitbook/assets/image%20%2815%29.png)
+![](../../.gitbook/assets/image%20%2816%29.png)
 
 第一步：安装两个tomcat，分别运行在8080和8081端口。
 

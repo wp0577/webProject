@@ -247,17 +247,17 @@
   <tbody></tbody>
 </table>#### 1.2.5.                  发布服务
 
-![](../../.gitbook/assets/image%20%28127%29.png)
+![](../../.gitbook/assets/image%20%28131%29.png)
 
 ### 1.3. 表现层
 
 后台管理工程中调用商品导入服务。
 
-![](../../.gitbook/assets/image%20%28195%29.png)
+![](../../.gitbook/assets/image%20%28200%29.png)
 
 #### 1.3.1.                  功能分析
 
-![](../../.gitbook/assets/image%20%2875%29.png)
+![](../../.gitbook/assets/image%20%2876%29.png)
 
 请求的url：/index/item/import
 

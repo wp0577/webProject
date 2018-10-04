@@ -1,6 +1,6 @@
 # 搜索工程搭建
 
-![](../../.gitbook/assets/image%20%2851%29.png)
+![](../../.gitbook/assets/image%20%2852%29.png)
 
 要实现搜索功能，需要搭建solr服务、搜索服务工程、搜索系统
 
@@ -16,5 +16,5 @@ e3-search（聚合工程pom）
 
 e3-search-web（war）
 
-![](../../.gitbook/assets/image%20%28150%29.png)
+![](../../.gitbook/assets/image%20%28155%29.png)
 

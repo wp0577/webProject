@@ -2,29 +2,29 @@
 
 ## 第一步：引入shiro框架相关的jar
 
-![](../../../.gitbook/assets/image%20%28235%29.png)
+![](../../../.gitbook/assets/image%20%28244%29.png)
 
 ## 第二步：在web.xml中配置spring框架提供的用于整合shiro框架的过滤器
 
-![](../../../.gitbook/assets/image%20%28252%29.png)
+![](../../../.gitbook/assets/image%20%28263%29.png)
 
 启动tomcat服务器，抛出异常：spring工厂中不存在一个名称为“shiroFilter”的bean对象
 
 ## 第三步：在spring配置文件中配置bean，id为shiroFilter
 
-![](../../../.gitbook/assets/image%20%28188%29.png)
+![](../../../.gitbook/assets/image%20%28193%29.png)
 
 框架提供的过滤器：
 
-![](../../../.gitbook/assets/image%20%28105%29.png)
+![](../../../.gitbook/assets/image%20%28109%29.png)
 
 ## 第四步：配置安全管理器
 
-![](../../../.gitbook/assets/image%20%2887%29.png)
+![](../../../.gitbook/assets/image%20%2889%29.png)
 
 ## 第五步：修改UserAction中的login方法，使用shiro提供的方式进行认证操作
 
-![](../../../.gitbook/assets/image%20%2880%29.png)
+![](../../../.gitbook/assets/image%20%2882%29.png)
 
 ## 第六步：自定义realm，并注入给安全管理器
 
@@ -58,5 +58,5 @@ public class BOSRealm extends AuthorizingRealm{
 
 ```
 
-![](../../../.gitbook/assets/image%20%2896%29.png)
+![](../../../.gitbook/assets/image%20%28100%29.png)
 

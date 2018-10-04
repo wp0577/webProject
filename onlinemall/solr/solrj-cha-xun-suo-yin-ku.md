@@ -237,7 +237,7 @@ Page：页码。如果没有此参数，需要给默认值1。
   <tbody></tbody>
 </table>#### 1.4.1.                  发布服务
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%288%29.png)
 
 ### 1.5. 表现层
 
@@ -245,11 +245,11 @@ Page：页码。如果没有此参数，需要给默认值1。
 
 在e3-search-web中添加接口依赖
 
-![](../../.gitbook/assets/image%20%28245%29.png)
+![](../../.gitbook/assets/image%20%28255%29.png)
 
 Springmvc.xml
 
-![](../../.gitbook/assets/image%20%28210%29.png)
+![](../../.gitbook/assets/image%20%28217%29.png)
 
 #### 1.5.2.                  Controller
 

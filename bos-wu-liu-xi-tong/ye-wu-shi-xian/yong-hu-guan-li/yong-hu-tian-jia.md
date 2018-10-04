@@ -1,6 +1,6 @@
 # 用户添加
 
-![](../../../.gitbook/assets/image%20%288%29.png)
+![](../../../.gitbook/assets/image%20%289%29.png)
 
 ## 页面调整
 
@@ -29,15 +29,15 @@
 
 第二步：在RoleAction中提供listajax方法，查询所有角色，返回json数据
 
-![](../../../.gitbook/assets/image%20%2823%29.png)
+![](../../../.gitbook/assets/image%20%2824%29.png)
 
 第三步：为保存按钮绑定事件，提交表单
 
-![](../../../.gitbook/assets/image%20%289%29.png)
+![](../../../.gitbook/assets/image%20%2810%29.png)
 
 ## 服务端实现
 
-![](../../../.gitbook/assets/image%20%2814%29.png)
+![](../../../.gitbook/assets/image%20%2815%29.png)
 
-![](../../../.gitbook/assets/image%20%28107%29.png)
+![](../../../.gitbook/assets/image%20%28111%29.png)
 
