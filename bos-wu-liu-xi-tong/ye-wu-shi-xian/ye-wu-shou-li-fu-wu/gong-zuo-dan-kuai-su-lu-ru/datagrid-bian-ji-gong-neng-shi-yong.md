@@ -4,11 +4,11 @@
 
 通过数据表格中的列属性定区具体那一列具有编辑功能：
 
-![](../../../../.gitbook/assets/image%20%28154%29.png)
+![](../../../../.gitbook/assets/image%20%28158%29.png)
 
 开始编辑：
 
-![](../../../../.gitbook/assets/image%20%28159%29.png)
+![](../../../../.gitbook/assets/image%20%28163%29.png)
 
 结束编辑：
 
@@ -16,19 +16,19 @@
 
  插入一行数据：
 
-![](../../../../.gitbook/assets/image%20%28267%29.png)
+![](../../../../.gitbook/assets/image%20%28274%29.png)
 
  删除一行：
 
-![](../../../../.gitbook/assets/image%20%28144%29.png)
+![](../../../../.gitbook/assets/image%20%28148%29.png)
 
  获得指定行对象的索引
 
-![](../../../../.gitbook/assets/image%20%2878%29.png)
+![](../../../../.gitbook/assets/image%20%2881%29.png)
 
  数据表格提供的用于监听结束编辑事件
 
-![](../../../../.gitbook/assets/image%20%28156%29.png)
+![](../../../../.gitbook/assets/image%20%28160%29.png)
 
 ```text
 <table id="mytable"></table>

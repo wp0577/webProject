@@ -245,11 +245,11 @@ Page：页码。如果没有此参数，需要给默认值1。
 
 在e3-search-web中添加接口依赖
 
-![](../../.gitbook/assets/image%20%28255%29.png)
+![](../../.gitbook/assets/image%20%28260%29.png)
 
 Springmvc.xml
 
-![](../../.gitbook/assets/image%20%28217%29.png)
+![](../../.gitbook/assets/image%20%28222%29.png)
 
 #### 1.5.2.                  Controller
 

@@ -17,7 +17,7 @@ Highcharts 是一个用纯JavaScript编写的一个图表库， 能够很简单�
 
 #### 第二步：在jsp页面中提供按钮，并提供div窗口，在这个窗口中展示图表
 
-![](../.gitbook/assets/image%20%28238%29.png)
+![](../.gitbook/assets/image%20%28243%29.png)
 
 ![](../.gitbook/assets/image%20%2812%29.png)
 
@@ -45,7 +45,7 @@ function doShowHighcharts(){
 
 #### 第四步：在服务端Action中提供方法
 
-![](../.gitbook/assets/image%20%28186%29.png)
+![](../.gitbook/assets/image%20%28190%29.png)
 
 Dao代码：
 
@@ -60,5 +60,5 @@ public class SubareaDaoImpl extends BaseDaoImpl<Subarea> implements ISubareaDao 
 
 ```
 
-![](../.gitbook/assets/image%20%2869%29.png)
+![](../.gitbook/assets/image%20%2871%29.png)
 

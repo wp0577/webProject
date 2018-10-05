@@ -2,7 +2,7 @@
 
 ## 1.  Solr集群的系统架构
 
-![](../../../.gitbook/assets/image%20%2868%29.png)
+![](../../../.gitbook/assets/image%20%2870%29.png)
 
 ### 1.1. 物理结构
 
@@ -36,7 +36,7 @@ Collection的逻辑分片。每个Shard被化成一个或者多个replication，
 
 ### 1.3. 需要实现的solr集群架构
 
-![](../../../.gitbook/assets/image%20%28151%29.png)
+![](../../../.gitbook/assets/image%20%28155%29.png)
 
 Zookeeper作为集群的管理工具。
 

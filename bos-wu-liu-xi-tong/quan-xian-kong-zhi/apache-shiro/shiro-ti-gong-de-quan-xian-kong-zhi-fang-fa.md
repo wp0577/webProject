@@ -22,13 +22,13 @@
 
 第二步：在Action的方法上使用shiro注解
 
-![](../../../.gitbook/assets/image%20%2863%29.png)
+![](../../../.gitbook/assets/image%20%2865%29.png)
 
-![](../../../.gitbook/assets/image%20%28108%29.png)
+![](../../../.gitbook/assets/image%20%28111%29.png)
 
 第三步：在struts.xml中配置全局异常捕获，当shiro框架抛出权限不足异常时，跳转到权限不足提示页面
 
-![](../../../.gitbook/assets/image%20%2887%29.png)
+![](../../../.gitbook/assets/image%20%2890%29.png)
 
 ## 2      使用shiro提供的页面标签方式权限控制
 
@@ -38,7 +38,7 @@
 
 第二步：使用shiro的标签控制页面元素展示
 
-![](../../../.gitbook/assets/image%20%28105%29.png)
+![](../../../.gitbook/assets/image%20%28108%29.png)
 
 ![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image008.jpg)
 
@@ -46,11 +46,11 @@
 
  URL拦截权限控制（基于过滤器实现）
 
-![](../../../.gitbook/assets/image%20%2867%29.png)
+![](../../../.gitbook/assets/image%20%2869%29.png)
 
  方法注解权限控制（基于代理技术实现）
 
-![](../../../.gitbook/assets/image%20%28143%29.png)
+![](../../../.gitbook/assets/image%20%28147%29.png)
 
  页面标签权限控制（标签技术实现）
 

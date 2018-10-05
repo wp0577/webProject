@@ -8,7 +8,7 @@
 
 ## 服务器端：
 
-![](../../../.gitbook/assets/image%20%28119%29.png)
+![](../../../.gitbook/assets/image%20%28122%29.png)
 
 ### 在BaseDao中扩展通用分页查询方法
 

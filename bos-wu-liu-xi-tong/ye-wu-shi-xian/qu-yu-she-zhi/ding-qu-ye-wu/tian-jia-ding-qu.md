@@ -2,7 +2,7 @@
 
 ## 使用combobox展示取派员数据
 
-![](../../../../.gitbook/assets/image%20%28206%29.png)
+![](../../../../.gitbook/assets/image%20%28210%29.png)
 
 ### 在StaffAction中提供listajax方法，查询所有未删除的取派员，返回json
 
@@ -20,19 +20,19 @@
 
 ### 在BaseDao中扩展一个通用查询方法
 
-![](../../../../.gitbook/assets/image%20%2883%29.png)
+![](../../../../.gitbook/assets/image%20%2886%29.png)
 
 ### StaffService中扩展方法，查询未删除的取派员
 
-![](../../../../.gitbook/assets/image%20%28201%29.png)
+![](../../../../.gitbook/assets/image%20%28205%29.png)
 
 ## 使用datagrid展示分区数据
 
-![](../../../../.gitbook/assets/image%20%28178%29.png)
+![](../../../../.gitbook/assets/image%20%28182%29.png)
 
 ### 在SubareaAction中提供listajax方法，查询所有未关联到定区的分区，返回json
 
-![](../../../../.gitbook/assets/image%20%28135%29.png)
+![](../../../../.gitbook/assets/image%20%28139%29.png)
 
 ### 在SubareaService中扩展方法，查询未关联到定区的分区
 
@@ -42,9 +42,9 @@
 
 ### 前台页面问题
 
-![](../../../../.gitbook/assets/image%20%28125%29.png)
+![](../../../../.gitbook/assets/image%20%28128%29.png)
 
-![](../../../../.gitbook/assets/image%20%28203%29.png)
+![](../../../../.gitbook/assets/image%20%28207%29.png)
 
 {% hint style="info" %}
 问题一：提交的表单中存在多个id参数
@@ -52,7 +52,7 @@
 解决方案：将datagrid的filed由id改为subareaid
 {% endhint %}
 
-![](../../../../.gitbook/assets/image%20%28243%29.png)
+![](../../../../.gitbook/assets/image%20%28248%29.png)
 
 {% hint style="info" %}
 问题二：提交的表单中subareaid参数的值为null
@@ -60,15 +60,15 @@
 解决方案：在分区类中提供getSubareaid方法
 {% endhint %}
 
-![](../../../../.gitbook/assets/image%20%28162%29.png)
+![](../../../../.gitbook/assets/image%20%28166%29.png)
 
-![](../../../../.gitbook/assets/image%20%2871%29.png)
+![](../../../../.gitbook/assets/image%20%2873%29.png)
 
 ### 服务器端实现
 
 ![](../../../../.gitbook/assets/image%20%2828%29.png)
 
-![](../../../../.gitbook/assets/image%20%28184%29.png)
+![](../../../../.gitbook/assets/image%20%28188%29.png)
 
 {% hint style="info" %}
 上图代码中，并没有保存Subarea对象的操作数据也得到了保存。这是因为得到的subarea对象是一个Hibernate的持久状态。此时该对象的改变在事务提交后也会更新到数据库中。
