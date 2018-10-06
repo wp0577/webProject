@@ -1,12 +1,12 @@
 # 内容分类管理
 
-![](../../../../.gitbook/assets/image%20%28187%29.png)
+![](../../../../.gitbook/assets/image%20%28188%29.png)
 
 #### 1.1.1.                  展示内容分类
 
 **功能分析**
 
-![](../../../../.gitbook/assets/image%20%28232%29.png)
+![](../../../../.gitbook/assets/image%20%28234%29.png)
 
 请求的url：/content/category/list
 

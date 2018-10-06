@@ -49,7 +49,7 @@
 
 引用服务：
 
-![](../../.gitbook/assets/image%20%28198%29.png)
+![](../../.gitbook/assets/image%20%28199%29.png)
 
 Springmvc.xml中添加引用：
 

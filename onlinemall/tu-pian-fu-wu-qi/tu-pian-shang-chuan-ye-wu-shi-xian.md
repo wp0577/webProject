@@ -4,11 +4,11 @@
 
 ![](../../.gitbook/assets/image%20%28170%29.png)
 
-![](../../.gitbook/assets/image%20%28253%29.png)
+![](../../.gitbook/assets/image%20%28256%29.png)
 
 ![](../../.gitbook/assets/image%20%2899%29.png)
 
-![](../../.gitbook/assets/image%20%28200%29.png)
+![](../../.gitbook/assets/image%20%28201%29.png)
 
 使用的是KindEditor的多图片上传插件。
 
@@ -23,7 +23,7 @@ KindEditor 4.x 文档
 返回值：  
  ![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.png)
 
-![](../../.gitbook/assets/image%20%28217%29.png)
+![](../../.gitbook/assets/image%20%28218%29.png)
 
 可以创建一个pojo对应返回值。可以使用map
 
@@ -133,11 +133,11 @@ Content-Type:text/plan;charset=UTF-8
 
 指定响应结果的content-type：
 
-![](../../.gitbook/assets/image%20%28226%29.png)
+![](../../.gitbook/assets/image%20%28228%29.png)
 
 KindEditor的多图片上传插件最后响应的content-type是text/plan格式的json字符串。兼容性是最好的。
 
-![](../../.gitbook/assets/image%20%28252%29.png)
+![](../../.gitbook/assets/image%20%28255%29.png)
 
 
 

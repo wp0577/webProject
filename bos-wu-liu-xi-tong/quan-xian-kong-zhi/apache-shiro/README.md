@@ -8,7 +8,7 @@
 
 ## shiro框架认证流程
 
-![](../../../.gitbook/assets/image%20%28215%29.png)
+![](../../../.gitbook/assets/image%20%28216%29.png)
 
 Application Code：应用程序代码，由开发人员负责开发的 
 

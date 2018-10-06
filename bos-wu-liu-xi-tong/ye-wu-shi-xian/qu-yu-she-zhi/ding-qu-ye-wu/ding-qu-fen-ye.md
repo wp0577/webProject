@@ -2,7 +2,7 @@
 
 ## 第一步：修改定区jsp页面中datagrid的URL地址
 
-![](../../../../.gitbook/assets/image%20%28276%29.png)
+![](../../../../.gitbook/assets/image%20%28280%29.png)
 
 ## 第二步：在定区Action中提供pageQuery方法
 

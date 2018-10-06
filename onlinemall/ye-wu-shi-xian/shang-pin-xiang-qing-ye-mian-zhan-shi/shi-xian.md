@@ -31,7 +31,7 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>![](../../../.gitbook/assets/image%20%28227%29.png)
+</table>![](../../../.gitbook/assets/image%20%28229%29.png)
 
 ### 1.3. 表现层
 

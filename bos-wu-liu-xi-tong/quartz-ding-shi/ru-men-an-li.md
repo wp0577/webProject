@@ -2,7 +2,7 @@
 
 ## 第一步：创建maven工程，导入spring和quartz相关依赖
 
-![](../../.gitbook/assets/image%20%28194%29.png)
+![](../../.gitbook/assets/image%20%28195%29.png)
 
 ## 第二步：创建任务类
 

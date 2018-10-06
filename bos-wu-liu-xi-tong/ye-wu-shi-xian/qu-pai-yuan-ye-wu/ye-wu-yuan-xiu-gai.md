@@ -4,7 +4,7 @@
 
 ### 第一步：为数据表格绑定双击事件
 
-![](../../../.gitbook/assets/image%20%28191%29.png)
+![](../../../.gitbook/assets/image%20%28192%29.png)
 
 ![](../../../.gitbook/assets/image%20%2837%29.png)
 

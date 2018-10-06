@@ -2,7 +2,7 @@
 
 ## 使用combobox展示取派员数据
 
-![](../../../../.gitbook/assets/image%20%28210%29.png)
+![](../../../../.gitbook/assets/image%20%28211%29.png)
 
 ### 在StaffAction中提供listajax方法，查询所有未删除的取派员，返回json
 
@@ -24,7 +24,7 @@
 
 ### StaffService中扩展方法，查询未删除的取派员
 
-![](../../../../.gitbook/assets/image%20%28205%29.png)
+![](../../../../.gitbook/assets/image%20%28206%29.png)
 
 ## 使用datagrid展示分区数据
 
@@ -44,7 +44,7 @@
 
 ![](../../../../.gitbook/assets/image%20%28128%29.png)
 
-![](../../../../.gitbook/assets/image%20%28207%29.png)
+![](../../../../.gitbook/assets/image%20%28208%29.png)
 
 {% hint style="info" %}
 问题一：提交的表单中存在多个id参数
@@ -52,7 +52,7 @@
 解决方案：将datagrid的filed由id改为subareaid
 {% endhint %}
 
-![](../../../../.gitbook/assets/image%20%28248%29.png)
+![](../../../../.gitbook/assets/image%20%28250%29.png)
 
 {% hint style="info" %}
 问题二：提交的表单中subareaid参数的值为null
@@ -68,7 +68,7 @@
 
 ![](../../../../.gitbook/assets/image%20%2828%29.png)
 
-![](../../../../.gitbook/assets/image%20%28188%29.png)
+![](../../../../.gitbook/assets/image%20%28189%29.png)
 
 {% hint style="info" %}
 上图代码中，并没有保存Subarea对象的操作数据也得到了保存。这是因为得到的subarea对象是一个Hibernate的持久状态。此时该对象的改变在事务提交后也会更新到数据库中。

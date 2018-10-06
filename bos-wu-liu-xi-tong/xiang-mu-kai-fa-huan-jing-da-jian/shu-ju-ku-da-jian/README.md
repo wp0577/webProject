@@ -2,11 +2,11 @@
 
 第一步：创建一个数据库
 
-![](../../../.gitbook/assets/image%20%28242%29.png)
+![](../../../.gitbook/assets/image%20%28244%29.png)
 
 第二步：创建一个数据库用户
 
-![](../../../.gitbook/assets/image%20%28259%29.png)
+![](../../../.gitbook/assets/image%20%28262%29.png)
 
 第三步：为新用户授权
 

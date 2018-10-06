@@ -45,7 +45,7 @@
 
 引用服务：
 
-![](../../../.gitbook/assets/image%20%28258%29.png)
+![](../../../.gitbook/assets/image%20%28261%29.png)
 
 1、初始化表格请求的url：/item/list
 

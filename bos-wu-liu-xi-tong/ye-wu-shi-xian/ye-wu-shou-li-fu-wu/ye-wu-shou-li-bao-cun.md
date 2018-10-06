@@ -49,7 +49,7 @@
 
 ## 在NoticebillAction中提供方法实现业务受理自动分单
 
-![](../../../.gitbook/assets/image%20%28247%29.png)
+![](../../../.gitbook/assets/image%20%28249%29.png)
 
 ```text
 @Service

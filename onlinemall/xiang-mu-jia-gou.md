@@ -21,7 +21,7 @@
 
 #### 1.2.1.                  传统架构
 
-![](../.gitbook/assets/image%20%28244%29.png)
+![](../.gitbook/assets/image%20%28246%29.png)
 
 #### 1.2.2.                  1000并发
 
@@ -68,7 +68,7 @@
 
 SOA：Service Oriented Architecture面向服务的架构。也就是把工程拆分成服务层、表现层两个工程。服务层中包含业务逻辑，只需要对外提供服务即可。表现层只需要处理和页面的交互，业务逻辑都是调用服务层的服务来实现。
 
-![](../.gitbook/assets/image%20%28231%29.png)
+![](../.gitbook/assets/image%20%28233%29.png)
 
 #### 1.2.5.                  宜立方商城系统架构
 

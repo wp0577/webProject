@@ -4,7 +4,7 @@ description: 通过comboBox插件实现下拉菜单的数据显示，并提供�
 
 # comboBox
 
-![](../../../../../.gitbook/assets/image%20%28270%29.png)
+![](../../../../../.gitbook/assets/image%20%28274%29.png)
 
 ![](../../../../../.gitbook/assets/image%20%28101%29.png)
 
@@ -22,9 +22,9 @@ description: 通过comboBox插件实现下拉菜单的数据显示，并提供�
 
 ## 服务器端
 
-![](../../../../../.gitbook/assets/image%20%28193%29.png)
+![](../../../../../.gitbook/assets/image%20%28194%29.png)
 
 ### 在RegionDao中扩展方法
 
-![](../../../../../.gitbook/assets/image%20%28192%29.png)
+![](../../../../../.gitbook/assets/image%20%28193%29.png)
 
