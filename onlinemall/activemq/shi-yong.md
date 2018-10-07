@@ -2,7 +2,7 @@
 
 ## 1.  ActiveMQ的使用方法
 
-![](../../.gitbook/assets/image%20%2840%29.png)
+![](../../.gitbook/assets/image%20%2841%29.png)
 
 ### 1.1. Queue
 
@@ -12,7 +12,7 @@
 
 把jar包添加到工程中。使用5.11.2版本的jar包。
 
-![](../../.gitbook/assets/image%20%28181%29.png)
+![](../../.gitbook/assets/image%20%28194%29.png)
 
 第一步：创建ConnectionFactory对象，需要指定服务端ip及端口号。
 

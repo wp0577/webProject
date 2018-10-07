@@ -2,11 +2,11 @@
 
 传统方式：
 
-![](../../../.gitbook/assets/image%20%28248%29.png)
+![](../../../.gitbook/assets/image%20%28264%29.png)
 
 集群环境：
 
-![](../../../.gitbook/assets/image%20%28241%29.png)
+![](../../../.gitbook/assets/image%20%28257%29.png)
 
 解决方案：
 

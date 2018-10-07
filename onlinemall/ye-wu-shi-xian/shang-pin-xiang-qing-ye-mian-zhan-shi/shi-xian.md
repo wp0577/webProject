@@ -31,7 +31,7 @@
     </tr>
   </thead>
   <tbody></tbody>
-</table>![](../../../.gitbook/assets/image%20%28229%29.png)
+</table>![](../../../.gitbook/assets/image%20%28244%29.png)
 
 ### 1.3. 表现层
 
@@ -112,7 +112,7 @@ ITEM\_INFO:123456:DESC
 
 #### 1.4.2.                  把redis相关的jar包添加到工程
 
-![](../../../.gitbook/assets/image%20%2854%29.png)
+![](../../../.gitbook/assets/image%20%2856%29.png)
 
 #### 1.4.3.                  添加缓存
 

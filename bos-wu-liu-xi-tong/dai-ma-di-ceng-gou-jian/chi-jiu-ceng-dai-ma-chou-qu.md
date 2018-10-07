@@ -1,6 +1,6 @@
 # 持久层代码抽取
 
-![](../../.gitbook/assets/image%20%28204%29.png)
+![](../../.gitbook/assets/image%20%28219%29.png)
 
 {% code-tabs %}
 {% code-tabs-item title="IBaseDao" %}

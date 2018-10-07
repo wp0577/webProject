@@ -36,7 +36,7 @@ tar -zxvf zookeeper-3.4.6.tar.gz
 
 第四步：进入zookeeper-3.4.6目录，创建data文件夹。
 
-第五步：把zoo\_sample.cfg改名为zoo.cfg
+第五步：把/conf/zoo\_sample.cfg改名为zoo.cfg
 
 \[root@localhost conf\]\# mv zoo\_sample.cfg zoo.cfg
 

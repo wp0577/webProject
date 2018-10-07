@@ -248,7 +248,7 @@ d\)      把商品信息添加到购物车
   <tbody></tbody>
 </table>发布服务：
 
-![](../../../.gitbook/assets/image%20%28187%29.png)
+![](../../../.gitbook/assets/image%20%28201%29.png)
 
 #### 1.3.4.                  Controller
 

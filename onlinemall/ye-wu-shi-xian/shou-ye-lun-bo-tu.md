@@ -49,11 +49,11 @@
 
 引用服务：
 
-![](../../.gitbook/assets/image%20%28199%29.png)
+![](../../.gitbook/assets/image%20%28214%29.png)
 
 Springmvc.xml中添加引用：
 
-![](../../.gitbook/assets/image%20%2851%29.png)
+![](../../.gitbook/assets/image%20%2852%29.png)
 
 需要在展示首页的Controller中添加业务逻辑。
 

@@ -10,7 +10,7 @@ Student对象。学号、姓名、年龄
 
 ${key.property}
 
-![](../../../.gitbook/assets/image%20%28140%29.png)
+![](../../../.gitbook/assets/image%20%28147%29.png)
 
 #### 1.1.3.                  取集合中的数据
 
@@ -20,9 +20,9 @@ ${student.id}/${studnet.name}
 
 &lt;/\#list&gt;
 
-![](../../../.gitbook/assets/image%20%28212%29.png)
+![](../../../.gitbook/assets/image%20%28227%29.png)
 
-![](../../../.gitbook/assets/image%20%28215%29.png)
+![](../../../.gitbook/assets/image%20%28230%29.png)
 
 #### 1.1.4.                  取循环中的下标
 
@@ -42,21 +42,21 @@ ${student.id}/${studnet.name}
 
 &lt;/\#if&gt;
 
-![](../../../.gitbook/assets/image%20%28235%29.png)
+![](../../../.gitbook/assets/image%20%28250%29.png)
 
 #### 1.1.6.                  日期类型格式化
 
-![](../../../.gitbook/assets/image%20%28269%29.png)
+![](../../../.gitbook/assets/image%20%28285%29.png)
 
 #### 1.1.7.                  Null值的处理
 
-![](../../../.gitbook/assets/image%20%2884%29.png)
+![](../../../.gitbook/assets/image%20%2888%29.png)
 
 #### 1.1.8.                  Include标签
 
 &lt;\#include “模板名称”&gt;
 
-![](../../../.gitbook/assets/image%20%28258%29.png)
+![](../../../.gitbook/assets/image%20%28274%29.png)
 
 ### 1.2. Freemarker整合spring
 
@@ -64,7 +64,7 @@ ${student.id}/${studnet.name}
 
 Freemarker的jar包
 
-![](../../../.gitbook/assets/image%20%28102%29.png)
+![](../../../.gitbook/assets/image%20%28106%29.png)
 
 #### 1.2.1.                  创建整合spring的配置文件
 
@@ -131,7 +131,7 @@ Freemarker的jar包
 
 加载配置文件：
 
-![](../../../.gitbook/assets/image%20%28226%29.png)
+![](../../../.gitbook/assets/image%20%28241%29.png)
 
 <table>
   <thead>
@@ -180,5 +180,5 @@ Freemarker的jar包
 
 生成静态页面的时机：商品添加后，生成静态页面。可以使用Activemq，订阅topic（商品添加）
 
-![](../../../.gitbook/assets/image%20%2895%29.png)
+![](../../../.gitbook/assets/image%20%2899%29.png)
 

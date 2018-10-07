@@ -6,9 +6,9 @@ e3-manager-server工程中发送消息。
 
 当商品添加完成后发送一个TextMessage，包含一个商品id。
 
-![](../../.gitbook/assets/image%20%28238%29.png)
+![](../../.gitbook/assets/image%20%28254%29.png)
 
-![](../../.gitbook/assets/image%20%2863%29.png)
+![](../../.gitbook/assets/image%20%2865%29.png)
 
 <table>
   <thead>
@@ -79,7 +79,7 @@ e3-manager-server工程中发送消息。
 
 根据商品id查询商品信息。
 
-![](../../.gitbook/assets/image%20%28104%29.png)
+![](../../.gitbook/assets/image%20%28108%29.png)
 
 映射文件：
 
@@ -188,9 +188,9 @@ e3-manager-server工程中发送消息。
   <tbody></tbody>
 </table>#### 1.2.5.                  Spring配置监听
 
-![](../../.gitbook/assets/image%20%2831%29.png)
+![](../../.gitbook/assets/image%20%2832%29.png)
 
 #### 1.2.6.                  实现流程
 
-![](../../.gitbook/assets/image%20%2888%29.png)
+![](../../.gitbook/assets/image%20%2892%29.png)
 

@@ -50,7 +50,7 @@ total 4
 
 第七步：修改配置文件。把conf目录下的zoo\_sample.cfg文件改名为zoo.cfg
 
-![](../../../.gitbook/assets/image%20%28213%29.png)
+![](../../../.gitbook/assets/image%20%28228%29.png)
 
 <table>
   <thead>
@@ -83,7 +83,7 @@ bin/zkServer.sh status
 
 第五步：配置solrCloud相关的配置。每个solrhome下都有一个solr.xml，把其中的ip及端口号配置好。
 
-![](../../../.gitbook/assets/image%20%28227%29.png)
+![](../../../.gitbook/assets/image%20%28242%29.png)
 
 第六步：让zookeeper统一管理配置文件。需要把solrhome/collection1/conf目录上传到zookeeper。上传任意solrhome中的配置文件即可。
 
@@ -133,7 +133,7 @@ bin/zkServer.sh status
 
 JAVA\_OPTS="-DzkHost=192.168.25.154:2181,192.168.25.154:2182,192.168.25.154:2183"
 
-![](../../../.gitbook/assets/image%20%28265%29.png)
+![](../../../.gitbook/assets/image%20%28281%29.png)
 
 第八步：启动每个tomcat实例。要包装zookeeper集群是启动状态。
 
@@ -145,17 +145,17 @@ JAVA\_OPTS="-DzkHost=192.168.25.154:2181,192.168.25.154:2182,192.168.25.154:2183
 
 http://192.168.25.154:8180/solr/admin/collections?action=CREATE&name=collection2&numShards=2&replicationFactor=2
 
-![](../../../.gitbook/assets/image%20%28119%29.png)
+![](../../../.gitbook/assets/image%20%28123%29.png)
 
-![](../../../.gitbook/assets/image%20%28257%29.png)
+![](../../../.gitbook/assets/image%20%28273%29.png)
 
 第十一步：删除不用的Collection。
 
 http://192.168.25.154:8180/solr/admin/collections?action=DELETE&name=collection1
 
-![](../../../.gitbook/assets/image%20%28109%29.png)
+![](../../../.gitbook/assets/image%20%28113%29.png)
 
-![](../../../.gitbook/assets/image%20%28232%29.png)
+![](../../../.gitbook/assets/image%20%28247%29.png)
 
 
 

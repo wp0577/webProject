@@ -43,7 +43,7 @@ Solr是java开发。
 第八步：关联solr及solrhome。需要修改solr工程的web.xml文件。  
  ![](file:////Users/wupan/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)
 
-![](../../.gitbook/assets/image%20%28184%29.png)
+![](../../.gitbook/assets/image%20%28198%29.png)
 
 第九步：启动Tomcat
 

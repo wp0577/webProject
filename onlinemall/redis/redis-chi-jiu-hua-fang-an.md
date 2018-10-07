@@ -14,7 +14,7 @@ Rdb：
 
 Aof的配置：
 
-![](../../.gitbook/assets/image%20%28203%29.png)
+![](../../.gitbook/assets/image%20%28218%29.png)
 
 两种持久化方案同时开启使用aof文件来恢复数据库。
 

@@ -2,7 +2,7 @@
 
 ### 1.1. 富文本编辑器介绍
 
-![](../../../.gitbook/assets/image%20%28202%29.png)
+![](../../../.gitbook/assets/image%20%28217%29.png)
 
 KindEditor
 

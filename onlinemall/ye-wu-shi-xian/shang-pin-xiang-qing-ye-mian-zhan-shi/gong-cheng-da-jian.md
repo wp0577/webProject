@@ -333,7 +333,7 @@ e3-item-web。打包方式war。可以参考e3-portal-web
 
 在搜索结果页面点击商品图片或者商品标题，展示商品详情页面。
 
-![](../../../.gitbook/assets/image%20%28185%29.png)
+![](../../../.gitbook/assets/image%20%28199%29.png)
 
 请求的url：/item/{itemId}
 

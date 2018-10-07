@@ -1,6 +1,6 @@
 # 内容管理
 
-![](../../../../.gitbook/assets/image%20%2827%29.png)
+![](../../../../.gitbook/assets/image%20%2828%29.png)
 
 
 
@@ -38,11 +38,11 @@ EasyUIDataGridResult
 
 **功能分析**
 
-![](../../../../.gitbook/assets/image%20%28125%29.png)
+![](../../../../.gitbook/assets/image%20%28129%29.png)
 
 新增内容，必须指定一个内容分类。
 
-![](../../../../.gitbook/assets/image%20%28268%29.png)
+![](../../../../.gitbook/assets/image%20%28284%29.png)
 
 提交表单请求的url：/content/save
 
@@ -93,7 +93,7 @@ EasyUIDataGridResult
   <tbody></tbody>
 </table>**发布服务**
 
-![](../../../../.gitbook/assets/image%20%2826%29.png)
+![](../../../../.gitbook/assets/image%20%2827%29.png)
 
 **引用服务**
 
