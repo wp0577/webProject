@@ -1,6 +1,6 @@
 # Junit测试问题
 
-{% embed data="{\"url\":\"https://blog.csdn.net/sunshinegyan/article/details/80481195\",\"type\":\"link\",\"title\":\"Spring Boot单元测试报错java.lang.IllegalStateException: Could not load TestContextBootstrapper \[null\] - CSDN博客\",\"description\":\"1 报错描述java.lang.IllegalStateException: Could not load TestContextBootstrapper \[null\]. Specify @BootstrapWith\'s \'value\' attribute or make the default bootstrapper class available.2分析原因spring-webmvc的版本应...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://csdnimg.cn/public/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="https://blog.csdn.net/sunshinegyan/article/details/80481195" %}
 
 ```text
 import com.wp.service.mailJobs.MailJob;

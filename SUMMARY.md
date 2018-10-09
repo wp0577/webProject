@@ -5,6 +5,8 @@
   * [面试问题](onlinemall/mian-shi-wen-ti.md)
   * [杂项](onlinemall/bug/README.md)
     * [jdk在linux下安装](onlinemall/bug/jdk-zai-linux-xia-an-zhuang.md)
+    * [Mysql在linux下安装](onlinemall/bug/mysql-zai-linux-xia-an-zhuang/README.md)
+      * [1](onlinemall/bug/mysql-zai-linux-xia-an-zhuang/1.md)
     * [Jedis密码连接](onlinemall/bug/jedis-mi-ma-lian-jie.md)
     * [购物车小计计算问题](onlinemall/bug/gou-wu-che-xiao-ji-ji-suan-wen-ti.md)
     * [某些web页面打开后，无登陆信息](onlinemall/bug/mou-xie-web-ye-mian-da-kai-hou-wu-deng-lu-xin-xi.md)

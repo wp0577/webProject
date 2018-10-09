@@ -1,6 +1,6 @@
 # 表单验证
 
-{% embed data="{\"url\":\"https://wp0577.gitbook.io/test1/front-end/jqeury/jqueryvalidate-cha-jian-biao-dan-xiao-yan\",\"type\":\"link\",\"title\":\"JQuery-validate插件（表单校验） - JavaEE\",\"icon\":{\"type\":\"icon\",\"url\":\"https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LFcIEEpyyi7v-mjfE-X%2Favatar.png?generation=1529684491520080&alt=media\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://www.gitbook.com/share/space/thumbnail/-LFcIEEpyyi7v-mjfE-X.png\",\"aspectRatio\":0}}" %}
+{% embed url="https://wp0577.gitbook.io/test1/front-end/jqeury/jqueryvalidate-cha-jian-biao-dan-xiao-yan" %}
 
 ```text
 $(function () {
