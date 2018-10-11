@@ -251,7 +251,7 @@ Controller：
 
 登录的业务流程：
 
-![](../../.gitbook/assets/image%20%28293%29.png)
+![](../../.gitbook/assets/image%20%28294%29.png)
 
 ![](../../.gitbook/assets/image%20%28141%29.png)
 

@@ -24,12 +24,12 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
   
 在Artifacts栏里点击绿色加号，选择Web Applicant:Archive
 
-![](../../.gitbook/assets/image%20%28292%29.png)
+![](../../.gitbook/assets/image%20%28293%29.png)
 
   
 设置好名称和输出路径。Build on make选项可选可不选。如果选择了，那么每次在运行项目时都会生成war包。如果不勾选则可以在后续的步骤中手动生成war包。如果下面显示.MF file not found in Accept.war，那么要继续进行配置。很多教程上都到了这一步就结束了，说“哎呀你们运行项目就可以去设置好的路径下找war包啦”。
 
-![](../../.gitbook/assets/image%20%28151%29.png)
+![](../../.gitbook/assets/image%20%28152%29.png)
 
   
 点击绿色加号选择Directory Content，选择你当前项目的WebRoot目录，之后保存就可以啦。![](https://img-blog.csdn.net/20161119171221283)![](https://img-blog.csdn.net/20161119171227781)  

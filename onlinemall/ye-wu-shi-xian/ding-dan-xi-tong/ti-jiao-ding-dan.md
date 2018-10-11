@@ -190,7 +190,7 @@ b\)      当前日期加三天。
 
 在拦截器中添加用户处理逻辑：
 
-![](../../../.gitbook/assets/image%20%28252%29.png)
+![](../../../.gitbook/assets/image%20%28253%29.png)
 
 <table>
   <thead>

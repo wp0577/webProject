@@ -5,6 +5,8 @@
   * [TODO](onlinemall/todo.md)
   * [面试问题](onlinemall/mian-shi-wen-ti.md)
   * [杂项](onlinemall/bug/README.md)
+    * [用户横向越权和纵向越权问题](onlinemall/bug/yong-hu-heng-xiang-yue-quan-he-zong-xiang-yue-quan-wen-ti.md)
+    * [idea配置修改](onlinemall/bug/idea-pei-zhi-xiu-gai.md)
     * [jdk在linux下安装](onlinemall/bug/jdk-zai-linux-xia-an-zhuang.md)
     * [Mysql在linux下安装](onlinemall/bug/mysql-zai-linux-xia-an-zhuang/README.md)
       * [1](onlinemall/bug/mysql-zai-linux-xia-an-zhuang/1.md)

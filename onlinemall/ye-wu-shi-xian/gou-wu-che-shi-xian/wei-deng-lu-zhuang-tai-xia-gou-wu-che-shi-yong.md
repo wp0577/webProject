@@ -24,9 +24,9 @@
 
 改造商品详情页面
 
-![](../../../.gitbook/assets/image%20%28283%29.png)
+![](../../../.gitbook/assets/image%20%28284%29.png)
 
-![](../../../.gitbook/assets/image%20%28269%29.png)
+![](../../../.gitbook/assets/image%20%28270%29.png)
 
 请求的url：/cart/add/{itemId}
 
@@ -192,7 +192,7 @@ List&lt;TbItem&gt;，每个商品数据使用TbItem保存。当根据商品id查
 
 4、每次修改都需要向服务端发送一个ajax请求，在服务端修改cookie中的商品数量。
 
-![](../../../.gitbook/assets/image%20%28240%29.png)
+![](../../../.gitbook/assets/image%20%28241%29.png)
 
 请求的url：/cart/update/num/{itemId}/{num}
 

@@ -12,7 +12,7 @@
 
 把jar包添加到工程中。使用5.11.2版本的jar包。
 
-![](../../.gitbook/assets/image%20%28194%29.png)
+![](../../.gitbook/assets/image%20%28195%29.png)
 
 第一步：创建ConnectionFactory对象，需要指定服务端ip及端口号。
 

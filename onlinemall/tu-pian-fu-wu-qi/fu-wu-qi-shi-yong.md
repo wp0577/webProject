@@ -2,7 +2,7 @@
 
 ### 1.1. Java客户端：
 
-![](../../.gitbook/assets/image%20%28232%29.png)
+![](../../.gitbook/assets/image%20%28233%29.png)
 
 Maven环境：
 

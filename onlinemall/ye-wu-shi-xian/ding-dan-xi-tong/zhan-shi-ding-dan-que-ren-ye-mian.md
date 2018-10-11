@@ -22,7 +22,7 @@
 
 ![](../../../.gitbook/assets/image%20%2817%29.png)
 
-![](../../../.gitbook/assets/image%20%28191%29.png)
+![](../../../.gitbook/assets/image%20%28192%29.png)
 
 请求的url：/order/order-cart
 

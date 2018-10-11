@@ -10,7 +10,7 @@
 
 ![](../../../.gitbook/assets/image%20%2866%29.png)
 
-![](../../../.gitbook/assets/image%20%28204%29.png)
+![](../../../.gitbook/assets/image%20%28205%29.png)
 
 {% hint style="info" %}
 注意：需要在Function类中提供getpId方法

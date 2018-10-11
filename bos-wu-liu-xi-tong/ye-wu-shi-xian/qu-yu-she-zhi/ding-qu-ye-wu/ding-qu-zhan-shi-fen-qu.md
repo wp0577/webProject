@@ -6,7 +6,7 @@
 
 ## 第二步：定义doDblClickRow函数
 
-![](../../../../.gitbook/assets/image%20%28189%29.png)
+![](../../../../.gitbook/assets/image%20%28190%29.png)
 
 ##  在分区Action中提供方法，根据定区id查询关联的分区
 

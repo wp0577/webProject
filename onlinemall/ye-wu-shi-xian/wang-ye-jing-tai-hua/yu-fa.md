@@ -10,7 +10,7 @@ Student对象。学号、姓名、年龄
 
 ${key.property}
 
-![](../../../.gitbook/assets/image%20%28147%29.png)
+![](../../../.gitbook/assets/image%20%28148%29.png)
 
 #### 1.1.3.                  取集合中的数据
 
@@ -20,9 +20,9 @@ ${student.id}/${studnet.name}
 
 &lt;/\#list&gt;
 
-![](../../../.gitbook/assets/image%20%28227%29.png)
+![](../../../.gitbook/assets/image%20%28228%29.png)
 
-![](../../../.gitbook/assets/image%20%28230%29.png)
+![](../../../.gitbook/assets/image%20%28231%29.png)
 
 #### 1.1.4.                  取循环中的下标
 
@@ -42,11 +42,11 @@ ${student.id}/${studnet.name}
 
 &lt;/\#if&gt;
 
-![](../../../.gitbook/assets/image%20%28250%29.png)
+![](../../../.gitbook/assets/image%20%28251%29.png)
 
 #### 1.1.6.                  日期类型格式化
 
-![](../../../.gitbook/assets/image%20%28285%29.png)
+![](../../../.gitbook/assets/image%20%28286%29.png)
 
 #### 1.1.7.                  Null值的处理
 
@@ -56,7 +56,7 @@ ${student.id}/${studnet.name}
 
 &lt;\#include “模板名称”&gt;
 
-![](../../../.gitbook/assets/image%20%28274%29.png)
+![](../../../.gitbook/assets/image%20%28275%29.png)
 
 ### 1.2. Freemarker整合spring
 
@@ -131,7 +131,7 @@ Freemarker的jar包
 
 加载配置文件：
 
-![](../../../.gitbook/assets/image%20%28241%29.png)
+![](../../../.gitbook/assets/image%20%28242%29.png)
 
 <table>
   <thead>

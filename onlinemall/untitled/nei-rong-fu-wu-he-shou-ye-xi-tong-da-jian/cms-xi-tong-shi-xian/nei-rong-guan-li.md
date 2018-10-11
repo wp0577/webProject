@@ -42,7 +42,7 @@ EasyUIDataGridResult
 
 新增内容，必须指定一个内容分类。
 
-![](../../../../.gitbook/assets/image%20%28284%29.png)
+![](../../../../.gitbook/assets/image%20%28285%29.png)
 
 提交表单请求的url：/content/save
 

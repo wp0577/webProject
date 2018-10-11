@@ -37,7 +37,7 @@
   <tbody></tbody>
 </table>第三步：js处理。
 
-![](../../.gitbook/assets/image%20%28288%29.png)
+![](../../.gitbook/assets/image%20%28289%29.png)
 
 ### 1.2. 登录功能
 

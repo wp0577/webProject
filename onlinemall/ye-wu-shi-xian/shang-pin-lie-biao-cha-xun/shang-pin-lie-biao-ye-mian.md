@@ -20,7 +20,7 @@ Easyui中datagrid控件要求的数据格式为：
 
 {total:”2”,rows:\[{“id”:”1”,”name”:”张三”},{“id”:”2”,”name”:”李四”}\]}
 
-![](../../../.gitbook/assets/image%20%28287%29.png)
+![](../../../.gitbook/assets/image%20%28288%29.png)
 
 #### 1.1.2.                  响应的json数据格式EasyUIResult
 

@@ -2,15 +2,15 @@
 
 ## 1.页面部分
 
-![](../../../.gitbook/assets/image%20%28291%29.png)
+![](../../../.gitbook/assets/image%20%28292%29.png)
 
 第一步：修改页面，使用ztree勾选效果（checkbox）
 
-![](../../../.gitbook/assets/image%20%28256%29.png)
+![](../../../.gitbook/assets/image%20%28257%29.png)
 
 第二步：修改ajax方法的请求URL地址
 
-![](../../../.gitbook/assets/image%20%28295%29.png)
+![](../../../.gitbook/assets/image%20%28296%29.png)
 
 第三步：为保存按钮绑定事件，提交表单
 

@@ -12,7 +12,7 @@ Mycat 是基于 cobar 演变而来，对 cobar 的代码进行了彻底的重构
 
 一个新颖的数据库中间件产品支持mysql集群，或者mariadb cluster，**提供高可用性数据分片集群。你可以像使用mysql一样使用mycat。对于开发人员来说根本感觉不到mycat的存在。**
 
-![](../../.gitbook/assets/image%20%28197%29.png)
+![](../../.gitbook/assets/image%20%28198%29.png)
 
 ### 1.2    Mycat支持的数据库
 
@@ -20,7 +20,7 @@ Mycat 是基于 cobar 演变而来，对 cobar 的代码进行了彻底的重构
 
 ### 1.3    Mycat的分片策略
 
-![](../../.gitbook/assets/image%20%28160%29.png)
+![](../../.gitbook/assets/image%20%28161%29.png)
 
 ### 1.4    概念说明
 

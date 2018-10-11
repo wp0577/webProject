@@ -6,7 +6,7 @@ e3-manager-server工程中发送消息。
 
 当商品添加完成后发送一个TextMessage，包含一个商品id。
 
-![](../../.gitbook/assets/image%20%28254%29.png)
+![](../../.gitbook/assets/image%20%28255%29.png)
 
 ![](../../.gitbook/assets/image%20%2865%29.png)
 

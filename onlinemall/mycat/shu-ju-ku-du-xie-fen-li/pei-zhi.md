@@ -2,13 +2,13 @@
 
 数据库读写分离对于大型系统或者访问量很高的互联网应用来说，是必不可少的一个重要功能。对于MySQL来说，标准的读写分离是主从模式，一个写节点Master后面跟着多个读节点，读节点的数量取决于系统的压力，通常是1-3个读节点的配置
 
-![](../../../.gitbook/assets/image%20%28187%29.png)
+![](../../../.gitbook/assets/image%20%28188%29.png)
 
 Mycat读写分离和自动切换机制，需要mysql的主从复制机制配合。
 
 ### 1.1    Mysql的主从复制
 
-![](../../../.gitbook/assets/image%20%28176%29.png)
+![](../../../.gitbook/assets/image%20%28177%29.png)
 
 主从配置需要注意的地方
 
@@ -129,7 +129,7 @@ Slave\_SQL\_Running: Yes //此状态必须YES
       </td>
     </tr>
   </tbody>
-</table>![](../../../.gitbook/assets/image%20%28193%29.png)
+</table>![](../../../.gitbook/assets/image%20%28194%29.png)
 
 以上操作过程，从服务器配置完成。
 

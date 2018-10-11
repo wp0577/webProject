@@ -45,7 +45,7 @@
 
 引用服务：
 
-![](../../../.gitbook/assets/image%20%28277%29.png)
+![](../../../.gitbook/assets/image%20%28278%29.png)
 
 1、初始化表格请求的url：/item/list
 
@@ -76,7 +76,7 @@
 
 服务调用超时时间默认1秒，
 
-![](../../../.gitbook/assets/image%20%28177%29.png)
+![](../../../.gitbook/assets/image%20%28178%29.png)
 
 Debug设置源代码：
 

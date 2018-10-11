@@ -1,12 +1,12 @@
 # 内容分类管理
 
-![](../../../../.gitbook/assets/image%20%28202%29.png)
+![](../../../../.gitbook/assets/image%20%28203%29.png)
 
 #### 1.1.1.                  展示内容分类
 
 **功能分析**
 
-![](../../../../.gitbook/assets/image%20%28249%29.png)
+![](../../../../.gitbook/assets/image%20%28250%29.png)
 
 请求的url：/content/category/list
 
@@ -100,7 +100,7 @@ E3-manager-web
 
 Springmvc.xml中添加服务的引用：
 
-![](../../../../.gitbook/assets/image%20%28169%29.png)
+![](../../../../.gitbook/assets/image%20%28170%29.png)
 
 Controller
 
@@ -131,7 +131,7 @@ Controller
 
 **功能分析**
 
-![](../../../../.gitbook/assets/image%20%28148%29.png)
+![](../../../../.gitbook/assets/image%20%28149%29.png)
 
 请求的url：/content/category/create
 
