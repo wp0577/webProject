@@ -1,5 +1,20 @@
 # 服务器规划
 
+
+
+Localhost:         
+
+| Manager Service | 8080     | Manager Web | 8081 |
+| :--- | :--- | :--- | :--- |
+| Content Service | 8083 | Portal Web | 8082 |
+| Search Service | 8084 | Search Web | 8085 |
+| SSO Service | 8087 | Item Web | 8086 |
+| Cart Service | 8090 | SSO Web | 8088 |
+| Order Service | 8092 | Cart Web | 8089 |
+|  |  | Order Web | 8091 |
+
+
+
 项目                                                                 服务器数量                                                                  虚拟机                         ip
 
 ----------------------------------------------------------------------------------------------------------------------
