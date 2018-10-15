@@ -104,6 +104,7 @@
       * [展示订单确认页面](onlinemall/ye-wu-shi-xian/ding-dan-xi-tong/zhan-shi-ding-dan-que-ren-ye-mian.md)
       * [登陆拦截器](onlinemall/ye-wu-shi-xian/ding-dan-xi-tong/deng-lu-lan-jie-qi.md)
       * [提交订单](onlinemall/ye-wu-shi-xian/ding-dan-xi-tong/ti-jiao-ding-dan.md)
+    * [支付宝业务接入](onlinemall/ye-wu-shi-xian/zhi-fu-bao-ye-wu-jie-ru.md)
 * [注册代码的基本实现](zhu-ce-dai-ma-de-ji-ben-shi-xian/README.md)
   * [ID，name, class属性区别](zhu-ce-dai-ma-de-ji-ben-shi-xian/idname-class-shu-xing-qu-bie.md)
   * [BeanUtil的使用](zhu-ce-dai-ma-de-ji-ben-shi-xian/beanutil-de-shi-yong.md)
